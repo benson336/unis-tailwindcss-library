@@ -1,0 +1,188 @@
+export const description =
+  'This guide will get you all set up and ready to use the Protocol API. We’ll cover how to get started an API client and how to make your first API request.'
+
+# Opera8 CSS Buttons
+
+Use the button component inside forms, as links, social login, payment options with support for multiple styles, colors, sizes, gradients, and shadows. {{ className: 'lead' }}
+
+The button component is probably the most widely used element in any user interface or website as it can be used to launch an action but also to link to other pages.
+
+Opera8 provides a large variety of styles and sizes for the button component including outlined buttons, multiple colors, sizes, buttons with icons, and more.
+
+
+## Filled Button
+
+Use these default button styles with multiple colors to indicate an action or link within your website.
+
+{/*<p className="bg-night-500 flex justify-center items-center" 
+style={{"width":"120px", "height":"40px", "border":"1px solid black", "borderRadius":"6px"}}>Sample</p>*/}
+
+
+
+
+
+<CodeGroup>
+```bash {{ title: 'Desktop' }}
+# cURL is most likely already installed on your machine
+curl --version
+```
+
+```bash {{ title: 'Tablet' }}
+# Install the Protocol JavaScript SDK
+npm install @example/protocol-api --save
+```
+
+```bash {{ title: 'Mobile' }}
+# Install the Protocol Python SDK
+pip install protocol_api
+```
+</CodeGroup>
+
+
+## Outlined Buttons
+
+Use these default button styles with multiple colors to indicate an action or link within your website.
+
+<CodeGroup>
+```bash {{ title: 'Desktop' }}
+# cURL is most likely already installed on your machine
+curl --version
+```
+
+```bash {{ title: 'Tablet' }}
+# Install the Protocol JavaScript SDK
+npm install @example/protocol-api --save
+```
+
+```bash {{ title: 'Mobile' }}
+# Install the Protocol Python SDK
+pip install protocol_api
+```
+</CodeGroup>
+
+## Text Buttons
+
+<CodeGroup>
+```bash {{ title: 'Desktop' }}
+# cURL is most likely already installed on your machine
+curl --version
+```
+
+```bash {{ title: 'Tablet' }}
+# Install the Protocol JavaScript SDK
+npm install @example/protocol-api --save
+```
+
+```bash {{ title: 'Mobile' }}
+# Install the Protocol Python SDK
+pip install protocol_api
+```
+
+</CodeGroup>
+
+## Elevated Buttons
+
+<CodeGroup>
+```bash {{ title: 'Desktop' }}
+# cURL is most likely already installed on your machine
+curl --version
+```
+
+```bash {{ title: 'Tablet' }}
+# Install the Protocol JavaScript SDK
+npm install @example/protocol-api --save
+```
+
+```bash {{ title: 'Mobile' }}
+# Install the Protocol Python SDK
+pip install protocol_api
+```
+
+</CodeGroup>
+
+## Tonal Buttons
+
+<CodeGroup>
+```bash {{ title: 'Desktop' }}
+# cURL is most likely already installed on your machine
+curl --version
+```
+
+```bash {{ title: 'Tablet' }}
+# Install the Protocol JavaScript SDK
+npm install @example/protocol-api --save
+```
+
+```bash {{ title: 'Mobile' }}
+# Install the Protocol Python SDK
+pip install protocol_api
+```
+
+</CodeGroup>
+
+## Underlined Buttons
+## Size Variations
+## Toggles
+## Link
+## Hover
+## Filter (dropdown)
+## Large Toggle
+## Options (dropdown)
+## Logo Button 
+## Radio Button 
+
+
+
+
+## Making your first API request
+
+After picking your preferred client, you are ready to make your first call to the Protocol API. Below, you can see how to send a GET request to the Conversations endpoint to get a list of all your conversations. In the cURL example, results are limited to ten conversations, the default page length for each client.
+
+<CodeGroup tag="GET" label="/v1/conversations">
+
+```bash {{ title: 'cURL' }}
+curl -G https://api.protocol.chat/v1/conversations \
+  -H "Authorization: Bearer {token}" \
+  -d limit=10
+```
+
+```js
+import ApiClient from '@example/protocol-api'
+
+const client = new ApiClient(token)
+
+await client.conversations.list()
+```
+
+```python
+from protocol_api import ApiClient
+
+client = ApiClient(token)
+
+client.conversations.list()
+```
+
+```php
+$client = new \Protocol\ApiClient($token);
+
+$client->conversations->list();
+```
+
+</CodeGroup>
+
+<div className="not-prose">
+  <Button
+    href="/conversations"
+    variant="text"
+    arrow="right"
+    children="Read the docs for the Conversations endpoint"
+  />
+</div>
+
+## What's next?
+
+Great, you're now set up with an API client and have made your first request to the API. Here are a few links that might be handy as you venture further into the Protocol API:
+
+- [Grab your API key from the Protocol dashboard](#)
+- [Check out the Conversations endpoint](/conversations)
+- [Learn about the different error messages in Protocol](/errors)

@@ -1,0 +1,651 @@
+# Colors
+
+Customizing the default color palette for your project. {{ className: 'lead' }}
+
+Judicious use of color can enhance communication, evoke your brand, provide visual continuity, communicate status and feedback, and help people understand information. {{ className: 'lead' }}
+
+## Customizing Colors
+
+UNIS includes an expertly-crafted default color palette out-of-the-box that is a great starting point if you don’t have your own specific branding in mind.
+
+
+<CodeGroup>
+
+```bash {{ title: 'Text Color' }}
+# Control the text color of an element using the text-{color} utilities. For example,
+<p class="text-blue-100">The quick brown fox...</p>
+```
+
+```bash {{ title: 'Background Color' }}
+# Control the background color of an element using the bg-{color} utilities. For example,
+<p class="bg-blue-100">The quick brown fox...</p>
+```
+
+</CodeGroup>
+
+
+
+{/*<div class="flex bg-green-50 rounded-lg justify-around items-top" style={{"width":"100%", "border":"1px solid black"}}>
+
+    <div class="flex justify-start items-top bg-green-50" style={{"width":"15%","border":"1px solid black"}}>
+        <div style={{"width":"100px", "height":"70px", "border":"1px solid black"}} class="text-black">
+            <h1>Black</h1>
+        </div>
+    </div>
+
+    <div class="flex justify-start items-top bg-green-50" style={{"width":"85%","border":"1px solid black"}}>
+        <div style={{"border":"1px solid red"}}  class="pb-8">
+            <div style={{"width":"110px", "height":"70px", "border":"1px solid black"}} class="bg-black rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5" style={{"border":"1px solid black"}}>
+                <div class="rounded-lg text-sm"><span>50</span></div>
+                <div class="rounded-lg text-sm"><span>#000000</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="flex bg-green-50 rounded-lg justify-around items-top" style={{"width":"100%", "border":"1px solid black"}}>
+
+    <div class="flex justify-start items-top flex-wrap bg-green-50 rounded-lg" style={{"width":"15%", "border":"1px solid black"}}>
+        <div style={{"width":"100px", "height":"70px", "border":"1px solid black"}} class="text-black">
+            <h1>Gray</h1>
+        </div>
+    </div>
+
+    <div class="flex justify-start items-top flex-wrap bg-green-50 rounded-lg" style={{"width":"85%", "border":"1px solid black"}}>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px", "border":"1px solid black"}} class="bg-gray-50 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5" style={{"border":"1px solid black"}}>
+                <div class="rounded-lg text-sm"><span>50</span></div>
+                <div class="rounded-lg text-sm"><span>#F6F6F6</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px", "border":"1px solid black"}} class="bg-gray-100 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5" style={{"border":"1px solid black"}}>
+                <div class="rounded-lg text-sm"><span>100</span></div>
+                <div class="rounded-lg text-sm"><span>#ECECEC</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px", "border":"1px solid black"}} class="bg-gray-200 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5" style={{"border":"1px solid black"}}>
+                <div class="rounded-lg text-sm"><span>200</span></div>
+                <div class="rounded-lg text-sm"><span>#CECECE</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px", "border":"1px solid black"}} class="bg-gray-300 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5" style={{"border":"1px solid black"}}>
+                <div class="rounded-lg text-sm"><span>300</span></div>
+                <div class="rounded-lg text-sm"><span>#B3B4B5</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px", "border":"1px solid black"}} class="bg-gray-400 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5" style={{"border":"1px solid black"}}>
+                <div class="rounded-lg text-sm"><span>400</span></div>
+                <div class="rounded-lg text-sm"><span>#989A9C</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px", "border":"1px solid black"}} class="bg-gray-500 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5" style={{"border":"1px solid black"}}>
+                <div class="rounded-lg text-sm"><span>500</span></div>
+                <div class="rounded-lg text-sm"><span>#88898B</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px", "border":"1px solid black"}} class="bg-gray-600 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5" style={{"border":"1px solid black"}}>
+                <div class="rounded-lg text-sm"><span>600</span></div>
+                <div class="rounded-lg text-sm"><span>#777879</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px", "border":"1px solid black"}} class="bg-gray-700 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5" style={{"border":"1px solid black"}}>
+                <div class="rounded-lg text-sm"><span>700</span></div>
+                <div class="rounded-lg text-sm"><span>#5E5F5F</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px", "border":"1px solid black"}} class="bg-gray-800 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5" style={{"border":"1px solid black"}}>
+                <div class="rounded-lg text-sm"><span>800</span></div>
+                <div class="rounded-lg text-sm"><span>#444545</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px", "border":"1px solid black"}} class="bg-gray-900 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5" style={{"border":"1px solid black"}}>
+                <div class="rounded-lg text-sm"><span>900</span></div>
+                <div class="rounded-lg text-sm"><span>#323232</span></div>
+            </div>
+        </div>
+    </div>
+</div>*/}
+
+
+<div class="flex rounded-lg justify-around items-top" style={{"width":"100%", "marginTop":"80px", "marginBottom":"50px"}}>
+
+    <div class="flex justify-start items-top" style={{"width":"15%"}}>
+        <div style={{"width":"100px", "height":"70px"}} class="text-black">
+            <h1>Black</h1>
+        </div>
+    </div>
+
+    <div class="flex justify-start items-top" style={{"width":"85%"}}>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-black rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>50</span></div>
+                <div class="rounded-lg text-sm"><span>#000000</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="flex rounded-lg justify-around items-top" style={{"width":"100%", "marginBottom":"50px" }}>
+
+    <div class="flex justify-start items-top flex-wrap rounded-lg" style={{"width":"15%"}}>
+        <div style={{"width":"100px", "height":"70px"}} class="text-black">
+            <h1>Gray</h1>
+        </div>
+    </div>
+
+    <div class="flex justify-start items-top flex-wrap rounded-lg" style={{"width":"85%"}}>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-gray-50 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>50</span></div>
+                <div class="rounded-lg text-sm"><span>#F6F6F6</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-gray-100 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>100</span></div>
+                <div class="rounded-lg text-sm"><span>#ECECEC</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-gray-200 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>200</span></div>
+                <div class="rounded-lg text-sm"><span>#CECECE</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-gray-300 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>300</span></div>
+                <div class="rounded-lg text-sm"><span>#B3B4B5</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-gray-400 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>400</span></div>
+                <div class="rounded-lg text-sm"><span>#989A9C</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-gray-500 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>500</span></div>
+                <div class="rounded-lg text-sm"><span>#88898B</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-gray-600 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>600</span></div>
+                <div class="rounded-lg text-sm"><span>#777879</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-gray-700 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>700</span></div>
+                <div class="rounded-lg text-sm"><span>#5E5F5F</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-gray-800 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>800</span></div>
+                <div class="rounded-lg text-sm"><span>#444545</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-gray-900 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>900</span></div>
+                <div class="rounded-lg text-sm"><span>#323232</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="flex rounded-lg justify-around items-top" style={{"width":"100%", "marginBottom":"50px"}}>
+
+    <div class="flex justify-start items-top flex-wrap rounded-lg" style={{"width":"15%"}}>
+        <div style={{"width":"100px", "height":"70px"}} class="text-black">
+            <h1>Night</h1>
+        </div>
+    </div>
+
+    <div class="flex justify-start items-top flex-wrap rounded-lg" style={{"width":"85%"}}>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-night-50 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>50</span></div>
+                <div class="rounded-lg text-sm"><span>#E2E3F5</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-night-100 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>100</span></div>
+                <div class="rounded-lg text-sm"><span>#CBCCDE</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-night-200 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>200</span></div>
+                <div class="rounded-lg text-sm"><span>#B3B6C8</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-night-300 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>300</span></div>
+                <div class="rounded-lg text-sm"><span>#9C9FB1</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-night-400 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>400</span></div>
+                <div class="rounded-lg text-sm"><span>#84889B</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-night-500 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>500</span></div>
+                <div class="rounded-lg text-sm"><span>#6D7284</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-night-600 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>600</span></div>
+                <div class="rounded-lg text-sm"><span>#555B6E</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-night-700 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>700</span></div>
+                <div class="rounded-lg text-sm"><span>#3E4457</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-night-800 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>800</span></div>
+                <div class="rounded-lg text-sm"><span>#262E41</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-night-900 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>900</span></div>
+                <div class="rounded-lg text-sm"><span>#0f172a</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="flex rounded-lg justify-around items-top" style={{"width":"100%", "marginBottom":"50px"}}>
+
+    <div class="flex justify-start items-top flex-wrap rounded-lg" style={{"width":"15%"}}>
+        <div style={{"width":"100px", "height":"70px"}} class="text-black">
+            <h1>Sky</h1>
+        </div>
+    </div>
+
+    <div class="flex justify-start items-top flex-wrap rounded-lg" style={{"width":"85%"}}>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-sky-50 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>50</span></div>
+                <div class="rounded-lg text-sm"><span>#F3FBFF</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-sky-100 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>100</span></div>
+                <div class="rounded-lg text-sm"><span>#E1F6FF</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-sky-200 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>200</span></div>
+                <div class="rounded-lg text-sm"><span>#B2E9FF</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-sky-300 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>300</span></div>
+                <div class="rounded-lg text-sm"><span>#83DBFF</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-sky-400 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>400</span></div>
+                <div class="rounded-lg text-sm"><span>#54CEFF</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-night-500 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>500</span></div>
+                <div class="rounded-lg text-sm"><span>#25C0FF</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-sky-600 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>600</span></div>
+                <div class="rounded-lg text-sm"><span>#00A8EC</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-sky-700 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>700</span></div>
+                <div class="rounded-lg text-sm"><span>#008DC6</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-sky-800 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>800</span></div>
+                <div class="rounded-lg text-sm"><span>#006087</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-sky-900 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>900</span></div>
+                <div class="rounded-lg text-sm"><span>#002F42</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="flex rounded-lg justify-around items-top" style={{"width":"100%", "marginBottom":"50px"}}>
+
+    <div class="flex justify-start items-top flex-wrap rounded-lg" style={{"width":"15%"}}>
+        <div style={{"width":"100px", "height":"70px"}} class="text-black">
+            <h1>Blue</h1>
+        </div>
+    </div>
+
+    <div class="flex justify-start items-top flex-wrap rounded-lg" style={{"width":"85%"}}>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-blue-50 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>50</span></div>
+                <div class="rounded-lg text-sm"><span>#F0FAFF</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-blue-100 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>100</span></div>
+                <div class="rounded-lg text-sm"><span>#E5F5FD</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-blue-200 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>200</span></div>
+                <div class="rounded-lg text-sm"><span>#B4DBF8</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-blue-300 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>300</span></div>
+                <div class="rounded-lg text-sm"><span>#82C0F4</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-blue-400 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>400</span></div>
+                <div class="rounded-lg text-sm"><span>#51A6EF</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-blue-500 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>500</span></div>
+                <div class="rounded-lg text-sm"><span>#1F8BEA</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-blue-600 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>600</span></div>
+                <div class="rounded-lg text-sm"><span>#1772C6</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-blue-700 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>700</span></div>
+                <div class="rounded-lg text-sm"><span>#1059A1</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-blue-800 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>800</span></div>
+                <div class="rounded-lg text-sm"><span>#083F7D</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-blue-900 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>900</span></div>
+                <div class="rounded-lg text-sm"><span>#002658</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="flex rounded-lg justify-around items-top" style={{"width":"100%", "marginBottom":"50px"}}>
+
+    <div class="flex justify-start items-top flex-wrap rounded-lg" style={{"width":"15%"}}>
+        <div style={{"width":"100px", "height":"70px"}} class="text-black">
+            <h1>Red</h1>
+        </div>
+    </div>
+
+    <div class="flex justify-start items-top flex-wrap rounded-lg" style={{"width":"85%"}}>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-red-50 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>50</span></div>
+                <div class="rounded-lg text-sm"><span>#FFECEC</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-red-100 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>100</span></div>
+                <div class="rounded-lg text-sm"><span>#FFD0D0</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-red-200 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>200</span></div>
+                <div class="rounded-lg text-sm"><span>#FFB1B1</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-red-300 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>300</span></div>
+                <div class="rounded-lg text-sm"><span>#F67D7B</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-red-400 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>400</span></div>
+                <div class="rounded-lg text-sm"><span>#EC4A44</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-red-500 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>500</span></div>
+                <div class="rounded-lg text-sm"><span>#E0312A</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-red-600 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>600</span></div>
+                <div class="rounded-lg text-sm"><span>#BE110B</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-red-700 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>700</span></div>
+                <div class="rounded-lg text-sm"><span>#990B07</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-red-800 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>800</span></div>
+                <div class="rounded-lg text-sm"><span>#740604</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-red-900 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>900</span></div>
+                <div class="rounded-lg text-sm"><span>#4F0000</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="flex rounded-lg justify-around items-top" style={{"width":"100%", "marginBottom":"50px"}}>
+
+    <div class="flex justify-start items-top flex-wrap rounded-lg" style={{"width":"15%"}}>
+        <div style={{"width":"100px", "height":"70px"}} class="text-black">
+            <h1>Teal</h1>
+        </div>
+    </div>
+
+    <div class="flex justify-start items-top flex-wrap rounded-lg" style={{"width":"85%"}}>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-teal-50 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>50</span></div>
+                <div class="rounded-lg text-sm"><span>#EDFAFA</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-teal-100 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>100</span></div>
+                <div class="rounded-lg text-sm"><span>#D5F5F6</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-teal-200 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>200</span></div>
+                <div class="rounded-lg text-sm"><span>#AFECEF</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-teal-300 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>300</span></div>
+                <div class="rounded-lg text-sm"><span>#7EDCE2</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-teal-400 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>400</span></div>
+                <div class="rounded-lg text-sm"><span>#16BDCA</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-teal-500 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>500</span></div>
+                <div class="rounded-lg text-sm"><span>#0694A2</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-teal-600 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>600</span></div>
+                <div class="rounded-lg text-sm"><span>#047481</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-teal-700 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>700</span></div>
+                <div class="rounded-lg text-sm"><span>#036672</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-teal-800 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>800</span></div>
+                <div class="rounded-lg text-sm"><span>#05505C</span></div>
+            </div>
+        </div>
+        <div class="pb-8">
+            <div style={{"width":"110px", "height":"70px"}} class="bg-teal-900 rounded-lg ml-5"></div>
+            <div class="flex justify-between ml-5">
+                <div class="rounded-lg text-sm"><span>900</span></div>
+                <div class="rounded-lg text-sm"><span>#014451</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
