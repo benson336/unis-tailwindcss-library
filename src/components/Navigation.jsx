@@ -188,9 +188,10 @@ export const navigation = [
     title: 'Foundations',
     links: [
       { title: 'Badge', href: '/' },
+      { title: 'Colors', href: '/colors' },
+      { title: 'Components', href: '/test' },
       { title: 'Quickstart', href: '/quickstart' },
       { title: 'Button', href: '/button' },
-      { title: 'Colors', href: '/colors' },
       { title: 'Cards (SDK)', href: '/sdks' },
       { title: 'Checkboxes', href: '/authentication' },
       { title: 'Chips', href: '/pagination' },
