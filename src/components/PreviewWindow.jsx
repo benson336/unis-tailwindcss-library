@@ -18,22 +18,26 @@ export default function PreviewWindow(){
     }
 
     const toggleColor = (e) => {
-        e.preventDefault();
+        console.log("Inside toggle color")
         setPreviewState({
             ...previewState,
-            selectedColor: "tttttttttt",
             showColor:!previewState.showColor,
         })
+       
     }
 
     const changeColor = (e) => {
-        console.log(e.target.classList[3]);
+        console.log("Inside change color")
+   
         setPreviewState({
             ...previewState,
-            selectedColor: "s",
             showColor:!previewState.showColor,
+            selectedColor: e.target.classList[3],
         })
+     
     }
+
+    console.log(previewState)
 
     {/*const changeColor = (e) => {
         console.log(e.target.value);
@@ -52,7 +56,7 @@ export default function PreviewWindow(){
 
 
 
-   console.log(previewState)
+  
 
 
     return(
@@ -91,8 +95,8 @@ export default function PreviewWindow(){
                     </div>
                 </div>
 
-                <div onClick={toggleColor} style={{"border":"1px solid rgb(229 231 235)", "cursor":"pointer"}} class="relative z-30 flex justify-center items-center font-medium rounded-lg bg-white hover:bg-gray-100 text-gray-900 hover:text-blue-700 px-2 py-1">
-                    <div class="px-3 py-2 rounded" style={{"backgroundColor":"#1F8BEA"}}></div>
+                <div style={{"border":"1px solid rgb(229 231 235)", "cursor":"pointer"}} class="relative z-30 flex justify-center items-center font-medium rounded-lg bg-white hover:bg-gray-100 text-gray-900 hover:text-blue-700 px-2 py-1">
+                    <div class={"px-3 py-2 rounded " + previewState.selectedColor} onClick={toggleColor}></div>
                     <svg class="-mr-1 ml-2 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg>
                     
                     {previewState.showColor ? 
@@ -108,44 +112,44 @@ export default function PreviewWindow(){
                             <div class="px-2 py-0.2 rounded bg-blue-500" onClick={changeColor} value="bg-blue-500">500</div>
                         </div>
                         <div class="flex justify-evenly items-center flex-wrap mt-2 mb-2">
-                            <div class="px-2 py-0.2 rounded bg-sky-50">50</div>
-                            <div class="px-2 py-0.2 rounded bg-sky-100">100</div>
-                            <div class="px-2 py-0.2 rounded bg-sky-200">200</div>
-                            <div class="px-2 py-0.2 rounded bg-sky-300">300</div>
-                            <div class="px-2 py-0.2 rounded bg-sky-400">400</div>
-                            <div class="px-2 py-0.2 rounded bg-sky-500">500</div>
+                            <div class="px-2 py-0.2 rounded bg-sky-50" onClick={changeColor} value="bg-sky-100">50</div>
+                            <div class="px-2 py-0.2 rounded bg-sky-100" onClick={changeColor} value="bg-sky-100">100</div>
+                            <div class="px-2 py-0.2 rounded bg-sky-200" onClick={changeColor} value="bg-sky-100">200</div>
+                            <div class="px-2 py-0.2 rounded bg-sky-300" onClick={changeColor} value="bg-sky-100">300</div>
+                            <div class="px-2 py-0.2 rounded bg-sky-400" onClick={changeColor} value="bg-sky-100">400</div>
+                            <div class="px-2 py-0.2 rounded bg-sky-500" onClick={changeColor} value="bg-skye-100">500</div>
                         </div>
                         <div class="flex justify-evenly items-center flex-wrap mt-2">
-                            <div class="px-2 py-0.2 rounded bg-teal-50">50</div>
-                            <div class="px-2 py-0.2 rounded bg-teal-100">100</div>
-                            <div class="px-2 py-0.2 rounded bg-teal-200">200</div>
-                            <div class="px-2 py-0.2 rounded bg-teal-300">300</div>
-                            <div class="px-2 py-0.2 rounded bg-teal-400">400</div>
-                            <div class="px-2 py-0.2 rounded bg-teal-500">500</div>
+                            <div class="px-2 py-0.2 rounded bg-teal-50" onClick={changeColor} value="bg-teal-100">50</div>
+                            <div class="px-2 py-0.2 rounded bg-teal-100" onClick={changeColor} value="bg-teal-100">100</div>
+                            <div class="px-2 py-0.2 rounded bg-teal-200" onClick={changeColor} value="bg-teal-100">200</div>
+                            <div class="px-2 py-0.2 rounded bg-teal-300" onClick={changeColor} value="bg-teal-100">300</div>
+                            <div class="px-2 py-0.2 rounded bg-teal-400" onClick={changeColor} value="bg-teal-100">400</div>
+                            <div class="px-2 py-0.2 rounded bg-teal-500" onClick={changeColor} value="bg-teal-100">500</div>
                         </div>
                         <div class="flex justify-evenly items-center flex-wrap mt-2">
-                            <div class="px-2 py-0.2 rounded bg-gray-50">50</div>
-                            <div class="px-2 py-0.2 rounded bg-gray-100">100</div>
-                            <div class="px-2 py-0.2 rounded bg-gray-200">200</div>
-                            <div class="px-2 py-0.2 rounded bg-gray-300">300</div>
-                            <div class="px-2 py-0.2 rounded bg-gray-400">400</div>
-                            <div class="px-2 py-0.2 rounded bg-gray-500">500</div>
+                            <div class="px-2 py-0.2 rounded bg-gray-50" onClick={changeColor} value="bg-gray-100">50</div>
+                            <div class="px-2 py-0.2 rounded bg-gray-100" onClick={changeColor} value="bg-gray-100">100</div>
+                            <div class="px-2 py-0.2 rounded bg-gray-200" onClick={changeColor} value="bg-gray-100">200</div>
+                            <div class="px-2 py-0.2 rounded bg-gray-300" onClick={changeColor} value="bg-gray-100">300</div>
+                            <div class="px-2 py-0.2 rounded bg-gray-400" onClick={changeColor} value="bg-gray-100">400</div>
+                            <div class="px-2 py-0.2 rounded bg-gray-500" onClick={changeColor} value="bg-gray-100">500</div>
                         </div>
                         <div class="flex justify-evenly items-center flex-wrap mt-2">
-                            <div class="px-2 py-0.2 rounded bg-night-50">50</div>
-                            <div class="px-2 py-0.2 rounded bg-night-100">100</div>
-                            <div class="px-2 py-0.2 rounded bg-night-200">200</div>
-                            <div class="px-2 py-0.2 rounded bg-night-300">300</div>
-                            <div class="px-2 py-0.2 rounded bg-night-400">400</div>
-                            <div class="px-2 py-0.2 rounded bg-night-500">500</div>
+                            <div class="px-2 py-0.2 rounded bg-night-50" onClick={changeColor} value="bg-night-100">50</div>
+                            <div class="px-2 py-0.2 rounded bg-night-100" onClick={changeColor} value="bg-night-100">100</div>
+                            <div class="px-2 py-0.2 rounded bg-night-200" onClick={changeColor} value="bg-night-100">200</div>
+                            <div class="px-2 py-0.2 rounded bg-night-300" onClick={changeColor} value="bg-night-100">300</div>
+                            <div class="px-2 py-0.2 rounded bg-night-400" onClick={changeColor} value="bg-night-100">400</div>
+                            <div class="px-2 py-0.2 rounded bg-night-500" onClick={changeColor} value="bg-night-100">500</div>
                         </div>
-                        <div class="flex justify-evenly items-center flex-wrap mt-2">
-                            <div class="px-2 py-0.2 rounded bg-red-50">50</div>
-                            <div class="px-2 py-0.2 rounded bg-red-100">100</div>
-                            <div class="px-2 py-0.2 rounded bg-red-200">200</div>
-                            <div class="px-2 py-0.2 rounded bg-red-300">300</div>
-                            <div class="px-2 py-0.2 rounded bg-red-400">400</div>
-                            <div class="px-2 py-0.2 rounded bg-red-500">500</div>
+                        <div class="flex justify-evenly items-center flex-wrap mt-2"> 
+                            <div class="px-2 py-0.2 rounded bg-red-50" onClick={changeColor} value="bg-red-100">50</div>
+                            <div class="px-2 py-0.2 rounded bg-red-100" onClick={changeColor} value="bg-red-100">100</div>
+                            <div class="px-2 py-0.2 rounded bg-red-200" onClick={changeColor} value="bg-red-100">200</div>
+                            <div class="px-2 py-0.2 rounded bg-red-300" onClick={changeColor} value="bg-red-100">300</div>
+                            <div class="px-2 py-0.2 rounded bg-red-400" onClick={changeColor} value="bg-red-100">400</div>
+                            <div class="px-2 py-0.2 rounded bg-red-500" onClick={changeColor} value="bg-red-100">500</div>
                         </div>
                     </div> : null}
                 </div>
@@ -154,7 +158,7 @@ export default function PreviewWindow(){
             <div class="flex justify-center bg-white items-center" style={{"width":"100%", "height":"45%", "borderTop":"1px solid rgb(229 231 235)"}}>
      
                 {/*<div class="bg-blue-600 rounded py-2 px-3 text-white font-medium">Confirm</div>*/}
-                <div className={previewState.selectedColor + " rounded py-2 px-3 text-white font-medium"}>Confirm</div>
+                <div className={previewState.selectedColor + " rounded py-2 px-3 text-white font-medium font-lato"}>Whereas recognition</div>
                 <div class="ml-5">
                     
                     <div class="relative mt-1 rounded-md shadow-sm">
