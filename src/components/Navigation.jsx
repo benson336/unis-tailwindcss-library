@@ -192,12 +192,13 @@ export const navigation = [
       { title: 'Components', href: '/test' },
       { title: 'Quickstart', href: '/quickstart' },
       { title: 'Button', href: '/button' },
-      { title: 'Cards (SDK)', href: '/sdks' },
+      { title: 'Card', href: '/cards' },
+      { title: 'SDK', href: '/sdks' },
       { title: 'Checkboxes', href: '/authentication' },
       { title: 'Chips', href: '/pagination' },
       { title: 'Dashboard', href: '/errors' },
       { title: 'Date Pickers', href: '/webhooks' },
-      { title: 'Dialogs', href: '/test' },
+      /*{ title: 'Dialogs', href: '/test' },
       { title: 'Dividers', href: '/test' },
       { title: 'Floating Action Button', href: '/test' },
       { title: 'Icon Button', href: '/test' },
@@ -220,7 +221,7 @@ export const navigation = [
       { title: 'Tags', href: '/test' },
       { title: 'Text Fields', href: '/test' },
       { title: 'Timer Picker', href: '/test' },
-      { title: 'Typography', href: '/test' },
+      { title: 'Typography', href: '/test' },*/
 
 
     ],

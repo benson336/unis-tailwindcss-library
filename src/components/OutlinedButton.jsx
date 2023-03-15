@@ -1,11 +1,11 @@
 import React, { Component, useState } from 'react' 
 import PreviewWindow from './PreviewWindow'
 
-export default function OutlinedButton(){
+export default function Sample(){
             
     return(
         <>
-        <PreviewWindow name="Outlined"/>
+        <PreviewWindow />
         
         </>
     )
