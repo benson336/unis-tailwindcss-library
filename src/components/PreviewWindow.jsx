@@ -62,7 +62,7 @@ export default function PreviewWindow(props){
 
     return(
 
-        <div className="bg-gray-50 rounded-lg justify-around items-top relative" style={{"width":"100%", "height":"850px" ,"border":"1px solid rgb(229 231 235)"}}>
+        <div className="bg-gray-50 rounded-lg justify-around items-top relative" style={{"width":"100%", "height":"1200px" ,"border":"1px solid rgb(229 231 235)"}}>
 
             <div className="flex justify-around items-center text-center rounded-lg" style={{"width":"100%", "height":"10%"}}>
 
@@ -188,13 +188,11 @@ export default function PreviewWindow(props){
 
                     <div className="flex justify-center items-center bg-white items-center" style={{"width":"100%", "height":"45%"}}>
 
-
                         {/*Button - FilledButton*/}
                         <div>{props.filledButtonComp}</div>
 
                         {/*Card - Stacked*/}                        
                         <div>{props.stackedComp}</div>
-
 
                     </div>
 

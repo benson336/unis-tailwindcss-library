@@ -49,7 +49,7 @@ export default function FilledButton(){
                 + fillButtonState.selectedFont}>
                     Enabled
                 </button>*/}
-                <button className="py-1 px-5 border border-solid rounded-lg text-white bg-[#444545] hover:bg-[#989A9C] focus:bg-[#989A9C] active:bg-[#777879]">
+                <button className={"py-1 px-5 rounded-lg text-white " + fillButtonState.selectedColor + " hover:bg-[#989A9C] focus:bg-[#989A9C] active:bg-[#777879] " + fillButtonState.selectedFont}>
                     Enabled
                 </button>
                 <button className="py-1 px-5 rounded-lg text-white bg-[#989A9C] ml-3">
