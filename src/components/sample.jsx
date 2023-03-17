@@ -3,15 +3,36 @@ import PreviewWindow from './PreviewWindow'
 
 export default function Sample(){
     const [state, setState] = useState({
-      
+        showColor: false,
+        selectedColor:"bg-night-300",
+        selectedFont:"font-helvetica",
     });
 
-    const sampleFunction = (e) => {
-       e.preventDefault();
-       setState({
-           
-       })
-   };
+    const toggleColor = (e) => {
+        e.preventDefault();
+        setStackedState({
+            ...state,
+            showColor:!state.showColor,
+        })
+    }
+
+     const changeColor = (e) => {
+        e.preventDefault();
+        setStackedState({
+            ...state,
+            showColor:!state.showColor,
+            selectedColor: e.target.classList[3],
+        })
+     
+    }
+
+    const changeFont = (e) => {
+        e.preventDefault();
+        setStackedState({
+            ...state,
+            selectedFont: e.target.value,
+        })
+    }
 
    let sampleComponent = (
         <div>
@@ -21,9 +42,7 @@ export default function Sample(){
 
     return(
         <>
-        <PreviewWindow name="test"/>
-        <h1>Hello from sample</h1>
-        
+        <PreviewWindow sampleComponent="sampleComponent"/>
         </>
     )
 }

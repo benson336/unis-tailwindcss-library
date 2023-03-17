@@ -194,6 +194,9 @@ export default function PreviewWindow(props){
                         {/*Card - Stacked*/}                        
                         <div>{props.stackedComp}</div>
 
+                        {/*Card - Horizontal*/}                        
+                        <div>{props.horizontalComp}</div>
+
                     </div>
 
                     
@@ -202,23 +205,47 @@ export default function PreviewWindow(props){
             {previewState.showCode ? 
             <div className="flex justify-center items-center absolute bg-gray-800" style={{"width":"100%", "height":"88%", "borderTop":"1px solid rgb(229 231 235)", "top":"10%"}}>
                     <div className="text-xs text-green-400 ml-5 pt-5">
-                        &lt;div&gt;
-                        &lt;label for=&quot;price&quot; className=&quot;block text-sm font-medium text-gray-700&quot;&gt;Price&lt;/label&gt;
-                        &lt;div className=&quot;relative mt-1 rounded-md shadow-sm&quot;&gt;
-                            &lt;div className=&quot;pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3&quot;&gt;
-                                &lt;span className=&quot;text-gray-500 sm:text-sm&quot;&gt;$&lt;/span&gt;
-                            &lt;/div&gt;
-                            &lt;input type=&quot;text&quot; name=&quot;price&quot; id=&quot;price&quot; className=&quot;block w-full rounded-md border-gray-300 pl-7 pr-12 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm&quot; placeholder=&quot;0.00&quot; /&gt;
-                            &lt;div className=&quot;absolute inset-y-0 right-0 flex items-center&quot;&gt;
-                                &lt;label for=&quot;currency&quot; className=&quot;sr-only&quot;&gt;Currency&lt;/label&gt;
-                                &lt;select id=&quot;currency&quot; name=&quot;currency&quot; className=&quot;h-full rounded-md border-transparent bg-transparent py-0 pl-2 pr-7 text-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm&quot;&gt;
-                                    &lt;option&gt;USD&lt;/option&gt;
-                                    &lt;option&gt;CAD&lt;/option&gt;
-                                    &lt;option&gt;EUR&lt;/option&gt;
-                                &lt;/select&gt;
-                            &lt;/div&gt;
-                            &lt;/div&gt;
-                         &lt;/div&gt;</div>
+                    &#x3C;div class=&#x22;border rounded-xl&#x22; &#x3E;
+
+&#x3C;div class=&#x22;flex justify-start items-center p-3 w-full h-1/6&#x22;&#x3E;
+    &#x3C;div&#x3E;
+        &#x3C;p className=&#x22;w-8 h-8 text-base font-medium text-center text-[#1c1e33] rounded-full &#x22;&#x3E;A&#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;ml-4 leading-normal&#x22;&#x3E;
+        &#x3C;h4 class=&#x22;p-0 m-0 font-bold &#x22;&#x3E;Header&#x3C;/h4&#x3E;
+        &#x3C;p class=&#x22;p-0 m-0 &#x22;&#x3E;Subheader&#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;ml-44&#x22;&#x3E;
+        &#x3C;svg width={4} height={16} viewBox=&#x22;0 0 4 16&#x22; fill=&#x22;none&#x22; xmlns=&#x22;http://www.w3.org/2000/svg&#x22; preserveAspectRatio=&#x22;none&#x22;&#x3E;
+            &#x3C;path d=&#x22;M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z&#x22; fill=&#x22;#323232&#x22; /&#x3E;
+        &#x3C;/svg&#x3E;
+    &#x3C;/div&#x3E;   
+&#x3C;/div&#x3E;
+
+&#x3C;div&#x3E;
+    &#x3C;img src=&#x22;ddd.png&#x22; className=&#x22;h-48 object-cover m-0 mb-2&#x22; /&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;div class=&#x22;p-3&#x22;&#x3E;
+    &#x3C;div class=&#x22;leading-normal&#x22;&#x3E;
+        &#x3C;h4&#x3E;Title&#x3C;/h4&#x3E;
+        &#x3C;p&#x3E;Subtitle&#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;div class=&#x22;stackedPara leading-tight&#x22;&#x3E;
+        &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor&#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;div class=&#x22;flex justify-end&#x22;&#x3E;
+        &#x3C;button className=&#x22;py-1 px-5 border border-solid rounded-lg text-[#444545] hover:bg-[#989A9C] focus:bg-[#989A9C] active:bg-[#777879]&#x22;&#x3E;
+            Cancel
+        &#x3C;/button&#x3E;
+        &#x3C;button className=&#x22;py-1 px-5 ml-2 rounded-lg text-white hover:bg-[#989A9C] focus:bg-[#989A9C] active:bg-[#777879]&#x22;&#x3E;
+            Enabled
+        &#x3C;/button&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</div>
             </div> : 
             <div className="justify-center items-center bg-gray-800" style={{"width":"100%", "height":"45%", "borderTop":"1px solid rgb(229 231 235)"}}>
 
@@ -236,23 +263,47 @@ export default function PreviewWindow(props){
                 </div>
                 <div className="bg-gray-800" style={{"width":"100%", "height":"85%"}}>
                     <div className="text-xs text-green-400 ml-5 pt-5">
-                        &lt;div&gt;
-                        &lt;label for=&quot;price&quot; className=&quot;block text-sm font-medium text-gray-700&quot;&gt;Price&lt;/label&gt;
-                        &lt;div className=&quot;relative mt-1 rounded-md shadow-sm&quot;&gt;
-                            &lt;div className=&quot;pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3&quot;&gt;
-                                &lt;span className=&quot;text-gray-500 sm:text-sm&quot;&gt;$&lt;/span&gt;
-                            &lt;/div&gt;
-                            &lt;input type=&quot;text&quot; name=&quot;price&quot; id=&quot;price&quot; className=&quot;block w-full rounded-md border-gray-300 pl-7 pr-12 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm&quot; placeholder=&quot;0.00&quot; /&gt;
-                            &lt;div className=&quot;absolute inset-y-0 right-0 flex items-center&quot;&gt;
-                                &lt;label for=&quot;currency&quot; className=&quot;sr-only&quot;&gt;Currency&lt;/label&gt;
-                                &lt;select id=&quot;currency&quot; name=&quot;currency&quot; className=&quot;h-full rounded-md border-transparent bg-transparent py-0 pl-2 pr-7 text-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm&quot;&gt;
-                                    &lt;option&gt;USD&lt;/option&gt;
-                                    &lt;option&gt;CAD&lt;/option&gt;
-                                    &lt;option&gt;EUR&lt;/option&gt;
-                                &lt;/select&gt;
-                            &lt;/div&gt;
-                            &lt;/div&gt;
-                         &lt;/div&gt;
+                    &#x3C;div class=&#x22;border rounded-xl&#x22; &#x3E;
+
+                    &#x3C;div class=&#x22;flex justify-start items-center p-3 w-full h-1/6&#x22;&#x3E;
+                        &#x3C;div&#x3E;
+                            &#x3C;p className=&#x22;w-8 h-8 text-base font-medium text-center text-[#1c1e33] rounded-full &#x22;&#x3E;A&#x3C;/p&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;div class=&#x22;ml-4 leading-normal&#x22;&#x3E;
+                            &#x3C;h4 class=&#x22;p-0 m-0 font-bold &#x22;&#x3E;Header&#x3C;/h4&#x3E;
+                            &#x3C;p class=&#x22;p-0 m-0 &#x22;&#x3E;Subheader&#x3C;/p&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;div class=&#x22;ml-44&#x22;&#x3E;
+                            &#x3C;svg width={4} height={16} viewBox=&#x22;0 0 4 16&#x22; fill=&#x22;none&#x22; xmlns=&#x22;http://www.w3.org/2000/svg&#x22; preserveAspectRatio=&#x22;none&#x22;&#x3E;
+                                &#x3C;path d=&#x22;M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z&#x22; fill=&#x22;#323232&#x22; /&#x3E;
+                            &#x3C;/svg&#x3E;
+                        &#x3C;/div&#x3E;   
+                    &#x3C;/div&#x3E;
+
+                    &#x3C;div&#x3E;
+                        &#x3C;img src=&#x22;ddd.png&#x22; className=&#x22;h-48 object-cover m-0 mb-2&#x22; /&#x3E;
+                    &#x3C;/div&#x3E;
+
+                    &#x3C;div class=&#x22;p-3&#x22;&#x3E;
+                        &#x3C;div class=&#x22;leading-normal&#x22;&#x3E;
+                            &#x3C;h4&#x3E;Title&#x3C;/h4&#x3E;
+                            &#x3C;p&#x3E;Subtitle&#x3C;/p&#x3E;
+                        &#x3C;/div&#x3E;
+
+                        &#x3C;div class=&#x22;stackedPara leading-tight&#x22;&#x3E;
+                            &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor&#x3C;/p&#x3E;
+                        &#x3C;/div&#x3E;
+
+                        &#x3C;div class=&#x22;flex justify-end&#x22;&#x3E;
+                            &#x3C;button className=&#x22;py-1 px-5 border border-solid rounded-lg text-[#444545] hover:bg-[#989A9C] focus:bg-[#989A9C] active:bg-[#777879]&#x22;&#x3E;
+                                Cancel
+                            &#x3C;/button&#x3E;
+                            &#x3C;button className=&#x22;py-1 px-5 ml-2 rounded-lg text-white hover:bg-[#989A9C] focus:bg-[#989A9C] active:bg-[#777879]&#x22;&#x3E;
+                                Enabled
+                            &#x3C;/button&#x3E;
+                        &#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
                     </div>
                 </div>
                 
