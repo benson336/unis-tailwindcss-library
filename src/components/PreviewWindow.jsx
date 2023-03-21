@@ -55,8 +55,10 @@ export default function PreviewWindow(props){
         })
     }*/
 
-
     console.log(previewState)
+
+
+    const htmlString = "<div>I am html string</div>";
 
 
 
@@ -191,66 +193,50 @@ export default function PreviewWindow(props){
                         {/*Button - FilledButton*/}
                         <div>{props.filledButtonComp}</div>
 
+                        {/*Button - OutlinedButton*/}
+                        <div>{props.outlinedButtonComp}</div>
+
+                        {/*Button - TextButton*/}
+                        <div>{props.textButtonComp}</div>
+
+                        {/*Button - ElevatedButton*/}
+                        <div>{props.elevatedButtonComp}</div>
+
+                        {/*Button - TonalButton*/}
+                        <div>{props.tonalButtonComp}</div>
+
+                        {/*Button - UnderlinedButton*/}
+                        <div>{props.underlinedButtonComp}</div>
+
+
                         {/*Card - Stacked*/}                        
                         <div>{props.stackedComp}</div>
 
                         {/*Card - Horizontal*/}                        
                         <div>{props.horizontalComp}</div>
 
+                        {/*Card - Collapsible*/}                        
+                        <div>{props.collapsibleComp}</div>
+
                     </div>
 
                     
 
-                        
             {previewState.showCode ? 
             <div className="flex justify-center items-center absolute bg-gray-800" style={{"width":"100%", "height":"88%", "borderTop":"1px solid rgb(229 231 235)", "top":"10%"}}>
                     <div className="text-xs text-green-400 ml-5 pt-5">
-                    &#x3C;div class=&#x22;border rounded-xl&#x22; &#x3E;
+                        {/*Card - Stacked*/} 
+                        <div>{props.stackedCompString}</div>
 
-&#x3C;div class=&#x22;flex justify-start items-center p-3 w-full h-1/6&#x22;&#x3E;
-    &#x3C;div&#x3E;
-        &#x3C;p className=&#x22;w-8 h-8 text-base font-medium text-center text-[#1c1e33] rounded-full &#x22;&#x3E;A&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;ml-4 leading-normal&#x22;&#x3E;
-        &#x3C;h4 class=&#x22;p-0 m-0 font-bold &#x22;&#x3E;Header&#x3C;/h4&#x3E;
-        &#x3C;p class=&#x22;p-0 m-0 &#x22;&#x3E;Subheader&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;ml-44&#x22;&#x3E;
-        &#x3C;svg width={4} height={16} viewBox=&#x22;0 0 4 16&#x22; fill=&#x22;none&#x22; xmlns=&#x22;http://www.w3.org/2000/svg&#x22; preserveAspectRatio=&#x22;none&#x22;&#x3E;
-            &#x3C;path d=&#x22;M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z&#x22; fill=&#x22;#323232&#x22; /&#x3E;
-        &#x3C;/svg&#x3E;
-    &#x3C;/div&#x3E;   
-&#x3C;/div&#x3E;
+                        {/*Card - Horizontal*/}  
+                        <div>{props.horizontalCompString}</div>
 
-&#x3C;div&#x3E;
-    &#x3C;img src=&#x22;ddd.png&#x22; className=&#x22;h-48 object-cover m-0 mb-2&#x22; /&#x3E;
-&#x3C;/div&#x3E;
-
-&#x3C;div class=&#x22;p-3&#x22;&#x3E;
-    &#x3C;div class=&#x22;leading-normal&#x22;&#x3E;
-        &#x3C;h4&#x3E;Title&#x3C;/h4&#x3E;
-        &#x3C;p&#x3E;Subtitle&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-
-    &#x3C;div class=&#x22;stackedPara leading-tight&#x22;&#x3E;
-        &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-
-    &#x3C;div class=&#x22;flex justify-end&#x22;&#x3E;
-        &#x3C;button className=&#x22;py-1 px-5 border border-solid rounded-lg text-[#444545] hover:bg-[#989A9C] focus:bg-[#989A9C] active:bg-[#777879]&#x22;&#x3E;
-            Cancel
-        &#x3C;/button&#x3E;
-        &#x3C;button className=&#x22;py-1 px-5 ml-2 rounded-lg text-white hover:bg-[#989A9C] focus:bg-[#989A9C] active:bg-[#777879]&#x22;&#x3E;
-            Enabled
-        &#x3C;/button&#x3E;
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-&#x3C;/div&#x3E;</div>
+                        {/*Card - Collapsible*/}                        
+                        <div>{props.collapsibleCompString}</div>
+                    </div>
             </div> : 
             <div className="justify-center items-center bg-gray-800" style={{"width":"100%", "height":"45%", "borderTop":"1px solid rgb(229 231 235)"}}>
-
                 <div className="flex justify-between items-center bg-gray-900" style={{"width":"100%", "height":"15%"}}>
-
                     <div className="flex justify-center items-center">
                         <div className="text-xs text-green-400 ml-5">HTML</div>
                         <div className="text-xs text-white ml-5">tailwind.config.js</div>
@@ -258,61 +244,22 @@ export default function PreviewWindow(props){
                     <div className="flex justify-center items-center bg-gray-800 rounded px-2 py-1 mr-5" style={{"border":"1px solid white"}}>
                         <div className="text-xs text-white">Copy code</div>
                     </div>
-
-
                 </div>
                 <div className="bg-gray-800" style={{"width":"100%", "height":"85%"}}>
                     <div className="text-xs text-green-400 ml-5 pt-5">
-                    &#x3C;div class=&#x22;border rounded-xl&#x22; &#x3E;
+                        {/*Card - Stacked*/} 
+                        <div>{props.stackedCompString}</div>
 
-                    &#x3C;div class=&#x22;flex justify-start items-center p-3 w-full h-1/6&#x22;&#x3E;
-                        &#x3C;div&#x3E;
-                            &#x3C;p className=&#x22;w-8 h-8 text-base font-medium text-center text-[#1c1e33] rounded-full &#x22;&#x3E;A&#x3C;/p&#x3E;
-                        &#x3C;/div&#x3E;
-                        &#x3C;div class=&#x22;ml-4 leading-normal&#x22;&#x3E;
-                            &#x3C;h4 class=&#x22;p-0 m-0 font-bold &#x22;&#x3E;Header&#x3C;/h4&#x3E;
-                            &#x3C;p class=&#x22;p-0 m-0 &#x22;&#x3E;Subheader&#x3C;/p&#x3E;
-                        &#x3C;/div&#x3E;
-                        &#x3C;div class=&#x22;ml-44&#x22;&#x3E;
-                            &#x3C;svg width={4} height={16} viewBox=&#x22;0 0 4 16&#x22; fill=&#x22;none&#x22; xmlns=&#x22;http://www.w3.org/2000/svg&#x22; preserveAspectRatio=&#x22;none&#x22;&#x3E;
-                                &#x3C;path d=&#x22;M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z&#x22; fill=&#x22;#323232&#x22; /&#x3E;
-                            &#x3C;/svg&#x3E;
-                        &#x3C;/div&#x3E;   
-                    &#x3C;/div&#x3E;
+                        {/*Card - Horizontal*/}  
+                        <div>{props.horizontalCompString}</div>
 
-                    &#x3C;div&#x3E;
-                        &#x3C;img src=&#x22;ddd.png&#x22; className=&#x22;h-48 object-cover m-0 mb-2&#x22; /&#x3E;
-                    &#x3C;/div&#x3E;
-
-                    &#x3C;div class=&#x22;p-3&#x22;&#x3E;
-                        &#x3C;div class=&#x22;leading-normal&#x22;&#x3E;
-                            &#x3C;h4&#x3E;Title&#x3C;/h4&#x3E;
-                            &#x3C;p&#x3E;Subtitle&#x3C;/p&#x3E;
-                        &#x3C;/div&#x3E;
-
-                        &#x3C;div class=&#x22;stackedPara leading-tight&#x22;&#x3E;
-                            &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor&#x3C;/p&#x3E;
-                        &#x3C;/div&#x3E;
-
-                        &#x3C;div class=&#x22;flex justify-end&#x22;&#x3E;
-                            &#x3C;button className=&#x22;py-1 px-5 border border-solid rounded-lg text-[#444545] hover:bg-[#989A9C] focus:bg-[#989A9C] active:bg-[#777879]&#x22;&#x3E;
-                                Cancel
-                            &#x3C;/button&#x3E;
-                            &#x3C;button className=&#x22;py-1 px-5 ml-2 rounded-lg text-white hover:bg-[#989A9C] focus:bg-[#989A9C] active:bg-[#777879]&#x22;&#x3E;
-                                Enabled
-                            &#x3C;/button&#x3E;
-                        &#x3C;/div&#x3E;
-                    &#x3C;/div&#x3E;
-                    &#x3C;/div&#x3E;
+                        {/*Card - Collapsible*/}                        
+                        <div>{props.collapsibleCompString}</div>
                     </div>
                 </div>
-                
             </div>
             }
             
-
-
-
         </div>
     )
 }

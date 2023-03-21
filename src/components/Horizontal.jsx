@@ -35,28 +35,33 @@ export default function Sample(){
     }
 
    let horizontalComp = (
-        
-           
-                <div class="flex justify-start items-center border rounded-xl" style={{"width":"356px", "height":"80px"}}>
-                    <div class="ml-4">
-                        <p className={"w-8 h-8 p-0 m-0 text-base font-medium text-center text-[#1c1e33] rounded-full " + horizontalState.selectedColor}>A</p>
-                    </div>
-                    <div class="ml-4 leading-normal">
-                        <h4 class={"p-0 m-0 font-bold " + horizontalState.selectedFont}>Header</h4>
-                        <p class={"p-0 m-0 " + horizontalState.selectedFont}>Subheader</p>
-                    </div>
-                    <div class="ml-36">
-                        <img src="vvv.png" className="w-20 h-20 m-0 p-0 object-cover border rounded-r-xl" />
-                    </div>   
+                <div className="flex justify-end items-center border rounded-xl" style={{"width":"356px", "height":"80px"}}>
+                  
+                        <div className="mr-5%">
+                            <p className={"w-8 h-8 p-0 m-0 text-base font-medium text-center text-[#1c1e33] rounded-full " + horizontalState.selectedColor}>A</p>
+                        </div>
+                        <div className="ml-5% leading-normal">
+                            <h4 className={"p-0 m-0 font-bold " + horizontalState.selectedFont}>Header</h4>
+                            <p className={"p-0 m-0 " + horizontalState.selectedFont}>Subheader</p>
+                        </div>
+                    
+                    
+                        <div className="">
+                            <img src="vvv.png" className="w-20 h-20 m-0 p-0 object-cover border rounded-r-xl" />
+                        </div>
+                     
                 </div>
-         
-    
     )
+
+    let horizontalCompString = '<div class="flex justify-start items-center border rounded-xl" style={{"width":"356px", "height":"80px"}}><div class="ml-4"><p class="w-8 h-8 p-0 m-0 text-base font-medium text-center text-[#1c1e33] rounded-full ' + horizontalState.selectedColor +'">A</p></div><div class="ml-4 leading-normal"><h4 class="p-0 m-0 font-bold ' + horizontalState.selectedFont + '">Header</h4><p class="p-0 m-0 ' + horizontalState.selectedFont + '">Subheader</p></div><div class="ml-36"><img src="vvv.png" class="w-20 h-20 m-0 p-0 object-cover border rounded-r-xl" /></div></div>';
+
+    //let stackedCompString = '<div><p class="w-8 h-8 p-0 m-0 text-base font-medium text-center text-[#1c1e33] rounded-full ' + stackedState.selectedColor +'">A</p></div>';
 
     return(
         <>
         <PreviewWindow 
         horizontalComp={horizontalComp} 
+        horizontalCompString={horizontalCompString}
         showColor={horizontalState.showColor} 
         selectedColor={horizontalState.selectedColor}
         changeColor={changeColor} 
