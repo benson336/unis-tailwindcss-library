@@ -208,6 +208,22 @@ export default function PreviewWindow(props){
                         {/*Button - UnderlinedButton*/}
                         <div>{props.underlinedButtonComp}</div>
 
+                        {/*Button - ButtonSize*/}
+                        <div>{props.buttonSizeComp}</div>
+
+                        {/*Button - ButtonToggle*/}
+                        <div>{props.buttonToggleComp}</div>
+
+                        {/*Button - ButtonLink*/}
+                        <div>{props.buttonLinkComp}</div>
+
+                        {/*Button - ButtonTooltip*/}
+                        <div>{props.buttonTooltipComp}</div>
+
+                        {/*Button - ButtonFilter*/}
+                        <div>{props.buttonFilterComp}</div>
+
+                        {/*-------------------------------------*/}
 
                         {/*Card - Stacked*/}                        
                         <div>{props.stackedComp}</div>
@@ -217,6 +233,9 @@ export default function PreviewWindow(props){
 
                         {/*Card - Collapsible*/}                        
                         <div>{props.collapsibleComp}</div>
+
+                        {/*Card - CollapsibleInput*/}                        
+                        <div>{props.collapsibleInputComp}</div>
 
                     </div>
 
@@ -233,6 +252,9 @@ export default function PreviewWindow(props){
 
                         {/*Card - Collapsible*/}                        
                         <div>{props.collapsibleCompString}</div>
+
+                        {/*Card - CollapsibleInput*/}                        
+                        <div>{props.collapsibleInputCompString}</div>
                     </div>
             </div> : 
             <div className="justify-center items-center bg-gray-800" style={{"width":"100%", "height":"45%", "borderTop":"1px solid rgb(229 231 235)"}}>
@@ -255,6 +277,9 @@ export default function PreviewWindow(props){
 
                         {/*Card - Collapsible*/}                        
                         <div>{props.collapsibleCompString}</div>
+
+                        {/*Card - CollapsibleInput*/}                        
+                        <div>{props.collapsibleInputCompString}</div>
                     </div>
                 </div>
             </div>

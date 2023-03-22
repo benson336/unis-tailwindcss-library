@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react' 
-import PreviewWindow from './PreviewWindow'
+import PreviewWindow from '../PreviewWindow'
 
 export default function FilledButton(){
 
@@ -44,7 +44,7 @@ export default function FilledButton(){
     let filledButtonComp = (
         <div>
             {/*Standard*/}
-            <div className="flex justify-center items-center bg-white items-center" style={{"width":"100%", "height":"45%"}}>
+            <div className="flex justify-center items-center bg-white">
                 {/*<button className={"py-1 px-5 border border-solid rounded-lg text-white " + fillButtonState.selectedColor + " hover:bg-gray-400 focus:bg-gray-400 active:bg-gray-600 " 
                 + fillButtonState.selectedFont}>
                     Enabled
@@ -67,7 +67,7 @@ export default function FilledButton(){
             </div>
 
             {/*Plus Left*/}
-            <div className="flex justify-center items-center bg-white items-center mt-5" style={{"width":"100%", "height":"45%"}}>
+            <div className="flex justify-center items-center bg-white mt-5">
                 <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-white bg-gray-800 hover:bg-gray-400 focus:bg-gray-400 active:bg-gray-600">
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -114,7 +114,7 @@ export default function FilledButton(){
             </div>
 
             {/*Plus Right*/}
-            <div className="flex justify-center items-center bg-white items-center mt-5" style={{"width":"100%", "height":"45%"}}>
+            <div className="flex justify-center items-center bg-white mt-5">
                 <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-white bg-gray-800 hover:bg-gray-400 focus:bg-gray-400 active:bg-gray-600">
                     <div className="mr-3">Enabled</div>
                     <div>

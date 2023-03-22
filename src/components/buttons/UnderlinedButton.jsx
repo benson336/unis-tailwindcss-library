@@ -1,9 +1,9 @@
 import React, { Component, useState } from 'react' 
-import PreviewWindow from './PreviewWindow'
+import PreviewWindow from '../PreviewWindow'
 
-export default function OutlinedButton(){
+export default function UnderlinedButton(){
 
-    const [outlinedButtonState, setOutlinedButtonState] = useState({
+    const [underlinedButtonState, setUnderlinedButtonState] = useState({
         showColor: false,
         selectedColor:"bg-night-500",
         selectedFont:"font-helvetica",
@@ -12,9 +12,9 @@ export default function OutlinedButton(){
     const toggleColor = (e) => {
         e.preventDefault();
 
-        setOutlinedButtonState({
-            ...outlinedButtonState,
-            showColor:!outlinedButtonState.showColor,
+        setUnderlinedButtonState({
+            ...underlinedButtonState,
+            showColor:!underlinedButtonState.showColor,
         })
        
     }
@@ -22,9 +22,9 @@ export default function OutlinedButton(){
      const changeColor = (e) => {
         e.preventDefault();
         
-        setOutlinedButtonState({
-            ...outlinedButtonState,
-            showColor:!outlinedButtonState.showColor,
+        setUnderlinedButtonState({
+            ...underlinedButtonState,
+            showColor:!underlinedButtonState.showColor,
             selectedColor: e.target.classList[3],
         })
      
@@ -32,8 +32,8 @@ export default function OutlinedButton(){
 
     const changeFont = (e) => {
         e.preventDefault();
-        setOutlinedButtonState({
-            ...outlinedButtonState,
+        setUnderlinedButtonState({
+            ...underlinedButtonState,
             selectedFont: e.target.value,
         })
     }
@@ -41,62 +41,62 @@ export default function OutlinedButton(){
     
    
 
-    let outlinedButtonComp = (
+    let underlinedButtonComp = (
         <div>
             {/*Standard*/}
-            <div className="flex justify-center items-center bg-white items-center" style={{"width":"100%", "height":"45%"}}>
-                <button className="py-1 px-5 flex justify-center items-center border border-solid border-gray-800 rounded-lg font-medium text-gray-800 bg-white hover:bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
+            <div className="flex justify-center items-center bg-white">
+                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-900 bg-white hover:text-gray-400 focus:text-gray-500 active:text-gray-700">
                     Enabled
                 </button>
-                <button className="py-1 px-5 border border-solid border-gray-800 rounded-lg font-medium text-gray-800 bg-gray-100 ml-3">
+                <button className="py-1 px-5 rounded-lg font-medium text-gray-400 bg-white ml-3">
                     Hovered
                 </button> 
-                <button className="py-1 px-5 border border-solid border-gray-800 rounded-lg font-medium text-gray-800 bg-gray-100 ml-3">
+                <button className="py-1 px-5 rounded-lg font-medium text-gray-500 bg-white ml-3">
                     Focused
                 </button> 
-                <button className="py-1 px-5 border border-solid border-gray-800 rounded-lg font-medium text-gray-800 bg-gray-200 ml-3">
+                <button className="py-1 px-5 rounded-lg font-medium text-gray-700 bg-white ml-3">
                     Active
                 </button> 
-                <button className="py-1 px-5 border border-solid border-gray-300 rounded-lg font-medium text-gray-300 disabled:white ml-3" disabled>
+                <button className="py-1 px-5 rounded-lg font-medium text-gray-300 disabled:bg-white ml-3" disabled>
                     Disabled
                 </button> 
             </div>
 
             {/*Plus Left*/}
-            <div className="flex justify-center items-center bg-white items-center mt-5" style={{"width":"100%", "height":"45%"}}>
-                <button className="py-1 px-5 flex justify-center items-center border border-solid border-gray-800 rounded-lg font-medium text-gray-800 bg-white hover:bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
+            <div className="flex justify-center items-center bg-white mt-5">
+                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-900 bg-white hover:text-gray-400 focus:text-gray-500 active:text-gray-700">
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                            <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#444545"/>
+                            <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#323232"/>
                         </svg>
                     </div>
                     <div className="ml-3">Enabled</div>
                 </button>
-                <button className="py-1 px-5 flex justify-center items-center border border-solid border-gray-800 rounded-lg font-medium text-gray-800 bg-gray-100 ml-3">
+                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-400 bg-white ml-3">
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                            <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#444545"/>
+                            <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#989A9C"/>
                         </svg>
                     </div>
                     <div className="ml-3">Hovered</div>
                 </button> 
-                <button className="py-1 px-5 flex justify-center items-center border border-solid border-gray-800 rounded-lg font-medium text-gray-800 bg-gray-100 ml-3">
+                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-500 bg-white ml-3">
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                            <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#444545"/>
+                            <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#88898B"/>
                         </svg>
                     </div>
                     <div className="ml-3">Focused</div>
                 </button> 
-                <button className="py-1 px-5 flex justify-center items-center border border-solid border-gray-800 rounded-lg font-medium text-gray-800 bg-gray-200 ml-3">
+                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-700 bg-white ml-3">
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                            <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#444545"/>
+                            <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#5E5F5F"/>
                         </svg>
                     </div>
                     <div className="ml-3">Actice</div>
                 </button> 
-                <button className="py-1 px-5 flex justify-center items-center border border-solid border-gray-300 rounded-lg font-medium text-gray-300 disabled:white ml-3" disabled>
+                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-300 disabled:bg-white ml-3" disabled>
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                             <path
@@ -110,40 +110,40 @@ export default function OutlinedButton(){
             </div>
 
             {/*Plus Right*/}
-            <div className="flex justify-center items-center bg-white items-center mt-5" style={{"width":"100%", "height":"45%"}}>
-                <button className="py-1 px-5 flex justify-center items-center border border-solid border-gray-800 rounded-lg font-medium text-gray-800 bg-white hover:bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
+            <div className="flex justify-center items-center bg-white mt-5">
+                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-900 bg-white hover:text-gray-400 focus:text-gray-500 active:text-gray-700">
                     <div className="mr-3">Enabled</div>
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                            <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#444545"/>
+                            <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#323232"/>
                         </svg>
                     </div>
                 </button>
-                <button className="py-1 px-5 flex justify-center items-center border border-solid border-gray-800 rounded-lg font-medium text-gray-800 bg-gray-100 ml-3">
+                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-400 bg-white ml-3">
                     <div className="mr-3">Hovered</div>
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                            <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#444545"/>
+                            <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#989A9C"/>
                         </svg>
                     </div>
                 </button> 
-                <button className="py-1 px-5 flex justify-center items-center border border-solid border-gray-800 rounded-lg font-medium text-gray-800 bg-gray-100 ml-3">
+                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-500 bg-white ml-3">
                     <div className="mr-3">Focused</div>
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                            <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#444545"/>
+                            <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#88898B"/>
                         </svg>
                     </div>
                 </button> 
-                <button className="py-1 px-5 flex justify-center items-center border border-solid border-gray-800 rounded-lg font-medium text-gray-800 bg-gray-200 ml-3">
+                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-700 bg-white ml-3">
                     <div className="mr-3">Actice</div>
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                            <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#444545"/>
+                            <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#5E5F5F"/>
                         </svg>
                     </div>
                 </button> 
-                <button className="py-1 px-5 flex justify-center items-center border border-solid border-gray-300 rounded-lg font-medium text-gray-300 disabled:white ml-3" disabled>
+                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-300 disabled:bg-white ml-3" disabled>
                     <div className="mr-3">Disabled</div>
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -161,9 +161,9 @@ export default function OutlinedButton(){
     return(
         <>
             <PreviewWindow
-            outlinedButtonComp={outlinedButtonComp} 
-            showColor={outlinedButtonState.showColor} 
-            selectedColor={outlinedButtonState.selectedColor}
+            underlinedButtonComp={underlinedButtonComp} 
+            showColor={underlinedButtonState.showColor} 
+            selectedColor={underlinedButtonState.selectedColor}
             changeColor={changeColor} 
             changeFont={changeFont} 
             toggleColor={toggleColor}

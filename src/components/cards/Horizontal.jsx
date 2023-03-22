@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react' 
-import PreviewWindow from './PreviewWindow'
+import PreviewWindow from '../PreviewWindow'
 
 export default function Sample(){
     const [horizontalState, setHorizontalState] = useState({
@@ -35,21 +35,19 @@ export default function Sample(){
     }
 
    let horizontalComp = (
-                <div className="flex justify-end items-center border rounded-xl" style={{"width":"356px", "height":"80px"}}>
-                  
-                        <div className="mr-5%">
+                <div className="flex justify-start items-center border rounded-xl" style={{"width":"356px", "height":"80px"}}>
+                    <div className="w-1/2 flex justify-start items-center">
+                        <div className="ml-10%">
                             <p className={"w-8 h-8 p-0 m-0 text-base font-medium text-center text-[#1c1e33] rounded-full " + horizontalState.selectedColor}>A</p>
                         </div>
-                        <div className="ml-5% leading-normal">
+                        <div className="ml-10% leading-normal">
                             <h4 className={"p-0 m-0 font-bold " + horizontalState.selectedFont}>Header</h4>
                             <p className={"p-0 m-0 " + horizontalState.selectedFont}>Subheader</p>
                         </div>
-                    
-                    
-                        <div className="">
-                            <img src="vvv.png" className="w-20 h-20 m-0 p-0 object-cover border rounded-r-xl" />
-                        </div>
-                     
+                    </div>
+                    <div className="w-1/2 flex justify-end items-center">
+                        <img src="vvv.png" className="w-20 h-20 m-0 p-0 object-cover border rounded-r-xl" />
+                    </div>
                 </div>
     )
 
