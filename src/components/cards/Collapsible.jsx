@@ -71,7 +71,7 @@ export default function Collapsible(){
         <>
         <PreviewWindow 
         collapsibleComp={collapsibleComp} 
-        //collapsibleCompString={collapsibleCompString}
+        collapsibleCompString={collapsibleCompString}
         showColor={collapsibleState.showColor} 
         selectedColor={collapsibleState.selectedColor}
         changeColor={changeColor} 

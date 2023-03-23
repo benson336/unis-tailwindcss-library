@@ -39,7 +39,7 @@ export default function OutlinedButton(){
     }
 
     
-   
+    let outlinedButtonCompString = '<div class="flex justify-start items-center border rounded-xl" style={{"width":"356px", "height":"80px"}}><div class="ml-4"><p class="w-8 h-8 p-0 m-0 text-base font-medium text-center text-[#1c1e33] rounded-full">A</p></div><div class="ml-4 leading-normal"><h4 class="p-0 m-0 font-bold">Header</h4><p class="p-0 m-0">Subheader</p></div><div class="ml-36"><img src="vvv.png" class="w-20 h-20 m-0 p-0 object-cover border rounded-r-xl" /></div></div>';
 
     let outlinedButtonComp = (
         <div>
@@ -162,6 +162,7 @@ export default function OutlinedButton(){
         <>
             <PreviewWindow
             outlinedButtonComp={outlinedButtonComp} 
+            outlinedButtonCompString={outlinedButtonCompString}
             showColor={outlinedButtonState.showColor} 
             selectedColor={outlinedButtonState.selectedColor}
             changeColor={changeColor} 

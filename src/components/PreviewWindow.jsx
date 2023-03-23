@@ -223,6 +223,16 @@ export default function PreviewWindow(props){
                         {/*Button - ButtonFilter*/}
                         <div>{props.buttonFilterComp}</div>
 
+                        {/*Button - ButtonFilterLarge*/}
+                        <div>{props.buttonToggleLargeComp}</div>
+
+                        {/*Button - Button Option*/}
+                        <div>{props.buttonOptionComp}</div>
+
+                        {/*Button - Button Radio*/}
+                        <div>{props.buttonRadioComp}</div>
+                        
+
                         {/*-------------------------------------*/}
 
                         {/*Card - Stacked*/}                        
@@ -244,6 +254,51 @@ export default function PreviewWindow(props){
             {previewState.showCode ? 
             <div className="flex justify-center items-center absolute bg-gray-800" style={{"width":"100%", "height":"88%", "borderTop":"1px solid rgb(229 231 235)", "top":"10%"}}>
                     <div className="text-xs text-green-400 ml-5 pt-5">
+                        {/*Button - FilledButton*/}
+                        <div>{props.filledButtonCompString}</div>
+
+                        {/*Button - OutlinedButton*/}
+                        <div>{props.outlinedButtonCompString}</div>
+
+                        {/*Button - TextButton*/}
+                        <div>{props.textButtonCompString}</div>
+
+                        {/*Button - ElevatedButton*/}
+                        <div>{props.elevatedButtonCompString}</div>
+
+                        {/*Button - TonalButton*/}
+                        <div>{props.tonalButtonCompString}</div>
+
+                        {/*Button - UnderlinedButton*/}
+                        <div>{props.underlinedButtonCompString}</div>
+
+                        {/*Button - ButtonSize*/}
+                        <div>{props.buttonSizeCompString}</div>
+
+                        {/*Button - ButtonToggle*/}
+                        <div>{props.buttonToggleCompString}</div>
+
+                        {/*Button - ButtonLink*/}
+                        <div>{props.buttonLinkCompString}</div>
+
+                        {/*Button - ButtonTooltip*/}
+                        <div>{props.buttonTooltipCompString}</div>
+
+                        {/*Button - ButtonFilter*/}
+                        <div>{props.buttonFilterCompString}</div>
+
+                        {/*Button - ButtonFilterLarge*/}
+                        <div>{props.buttonToggleLargeCompString}</div>
+
+                        {/*Button - Button Option*/}
+                        <div>{props.buttonOptionCompString}</div>
+
+                        {/*Button - Button Radio*/}
+                        <div>{props.buttonRadioComp}</div>
+                        
+
+                        {/*-------------------------------------*/}
+
                         {/*Card - Stacked*/} 
                         <div>{props.stackedCompString}</div>
 
@@ -269,6 +324,50 @@ export default function PreviewWindow(props){
                 </div>
                 <div className="bg-gray-800" style={{"width":"100%", "height":"85%"}}>
                     <div className="text-xs text-green-400 ml-5 pt-5">
+                        {/*Button - FilledButton*/}
+                        <div>{props.filledButtonCompString}</div>
+
+                        {/*Button - OutlinedButton*/}
+                        <div>{props.outlinedButtonCompString}</div>
+
+                        {/*Button - TextButton*/}
+                        <div>{props.textButtonCompString}</div>
+
+                        {/*Button - ElevatedButton*/}
+                        <div>{props.elevatedButtonCompString}</div>
+
+                        {/*Button - TonalButton*/}
+                        <div>{props.tonalButtonCompString}</div>
+
+                        {/*Button - UnderlinedButton*/}
+                        <div>{props.underlinedButtonCompString}</div>
+
+                        {/*Button - ButtonSize*/}
+                        <div>{props.buttonSizeCompString}</div>
+
+                        {/*Button - ButtonToggle*/}
+                        <div>{props.buttonToggleCompString}</div>
+
+                        {/*Button - ButtonLink*/}
+                        <div>{props.buttonLinkCompString}</div>
+
+                        {/*Button - ButtonTooltip*/}
+                        <div>{props.buttonTooltipCompString}</div>
+
+                        {/*Button - ButtonFilter*/}
+                        <div>{props.buttonFilterCompString}</div>
+
+                        {/*Button - ButtonFilterLarge*/}
+                        <div>{props.buttonToggleLargeCompString}</div>
+
+                        {/*Button - Button Option*/}
+                        <div>{props.buttonOptionCompString}</div>
+
+                        {/*Button - Button Radio*/}
+                        <div>{props.buttonRadioCompString}</div>
+
+                        {/*-------------------------------------*/}
+
                         {/*Card - Stacked*/} 
                         <div>{props.stackedCompString}</div>
 
