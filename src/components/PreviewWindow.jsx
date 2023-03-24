@@ -229,6 +229,9 @@ export default function PreviewWindow(props){
                         {/*Button - Button Option*/}
                         <div>{props.buttonOptionComp}</div>
 
+                        {/*Button - Button Logo*/}
+                        <div>{props.buttonLogoComp}</div>
+
                         {/*Button - Button Radio*/}
                         <div>{props.buttonRadioComp}</div>
                         
@@ -246,6 +249,9 @@ export default function PreviewWindow(props){
 
                         {/*Card - CollapsibleInput*/}                        
                         <div>{props.collapsibleInputComp}</div>
+
+                        {/*Card - Kanban*/}                        
+                        <div>{props.kanbanComp}</div>
 
                     </div>
 
@@ -293,6 +299,9 @@ export default function PreviewWindow(props){
                         {/*Button - Button Option*/}
                         <div>{props.buttonOptionCompString}</div>
 
+                        {/*Button - Button Logo*/}
+                        <div>{props.buttonLogoCompString}</div>
+
                         {/*Button - Button Radio*/}
                         <div>{props.buttonRadioComp}</div>
                         
@@ -310,6 +319,9 @@ export default function PreviewWindow(props){
 
                         {/*Card - CollapsibleInput*/}                        
                         <div>{props.collapsibleInputCompString}</div>
+
+                        {/*Card - Kanban*/}                        
+                        <div>{props.kanbanCompString}</div>
                     </div>
             </div> : 
             <div className="justify-center items-center bg-gray-800" style={{"width":"100%", "height":"45%", "borderTop":"1px solid rgb(229 231 235)"}}>
@@ -363,6 +375,9 @@ export default function PreviewWindow(props){
                         {/*Button - Button Option*/}
                         <div>{props.buttonOptionCompString}</div>
 
+                        {/*Button - Button Logo*/}
+                        <div>{props.buttonLogoCompString}</div>
+
                         {/*Button - Button Radio*/}
                         <div>{props.buttonRadioCompString}</div>
 
@@ -379,6 +394,9 @@ export default function PreviewWindow(props){
 
                         {/*Card - CollapsibleInput*/}                        
                         <div>{props.collapsibleInputCompString}</div>
+
+                        {/*Card - Kanban*/}                        
+                        <div>{props.kanbanCompString}</div>
                     </div>
                 </div>
             </div>
