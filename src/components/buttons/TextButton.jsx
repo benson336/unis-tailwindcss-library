@@ -5,14 +5,14 @@ export default function TextButton(){
 
     const [textButtonState, setTextButtonState] = useState({
         showColor: false,
-        selectedColor:"bg-night-500",
+        selectedColor:"bg-white",
         selectedFont:"font-helvetica",
      });
 
     const toggleColor = (e) => {
         e.preventDefault();
 
-        settextButtonState({
+        setTextButtonState({
             ...textButtonState,
             showColor:!textButtonState.showColor,
         })
@@ -22,7 +22,7 @@ export default function TextButton(){
      const changeColor = (e) => {
         e.preventDefault();
         
-        settextButtonState({
+        setTextButtonState({
             ...textButtonState,
             showColor:!textButtonState.showColor,
             selectedColor: e.target.classList[3],
@@ -32,7 +32,7 @@ export default function TextButton(){
 
     const changeFont = (e) => {
         e.preventDefault();
-        settextButtonState({
+        setTextButtonState({
             ...textButtonState,
             selectedFont: e.target.value,
         })
@@ -45,7 +45,7 @@ export default function TextButton(){
         <div>
             {/*Standard*/}
             <div className="flex justify-center items-center bg-white">
-                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-800 bg-white hover:bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
+                <button className={"py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-800 hover:bg-gray-100 focus:bg-gray-100 active:bg-gray-200 " + textButtonState.selectedColor + " " + textButtonState.selectedFont}>
                     Enabled
                 </button>
                 <button className="py-1 px-5 rounded-lg font-medium text-gray-800 bg-gray-100 ml-3">
@@ -64,7 +64,7 @@ export default function TextButton(){
 
             {/*Plus Left*/}
             <div className="flex justify-center items-center bg-white mt-5">
-                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-800 bg-white hover:bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
+                <button className={"py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-800 hover:bg-gray-100 focus:bg-gray-100 active:bg-gray-200 " + textButtonState.selectedColor + " " + textButtonState.selectedFont}>
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                             <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#444545"/>
@@ -111,7 +111,7 @@ export default function TextButton(){
 
             {/*Plus Right*/}
             <div className="flex justify-center items-center bg-white mt-5">
-                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-800 bg-white hover:bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
+                <button className={"py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-800 hover:bg-gray-100 focus:bg-gray-100 active:bg-gray-200 " + textButtonState.selectedColor + " " + textButtonState.selectedFont}>
                     <div className="mr-3">Enabled</div>
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">

@@ -253,6 +253,14 @@ export default function PreviewWindow(props){
                         {/*Card - Kanban*/}                        
                         <div>{props.kanbanComp}</div>
 
+                        {/*Card - Kanban List*/}                        
+                        <div>{props.kanbanListComp}</div>
+
+                        {/*Card - Ecommerce One*/}                        
+                        <div>{props.ecommerceOneComp}</div>
+                      
+
+
                     </div>
 
                     
@@ -322,6 +330,12 @@ export default function PreviewWindow(props){
 
                         {/*Card - Kanban*/}                        
                         <div>{props.kanbanCompString}</div>
+
+                        {/*Card - Kanban List*/}                        
+                        <div>{props.kanbanListCompString}</div>
+
+                        {/*Card - Ecommerce One*/}                        
+                        <div>{props.ecommerceOneCompString}</div>
                     </div>
             </div> : 
             <div className="justify-center items-center bg-gray-800" style={{"width":"100%", "height":"45%", "borderTop":"1px solid rgb(229 231 235)"}}>
@@ -397,6 +411,12 @@ export default function PreviewWindow(props){
 
                         {/*Card - Kanban*/}                        
                         <div>{props.kanbanCompString}</div>
+
+                        {/*Card - Kanban List*/}                        
+                        <div>{props.kanbanListCompString}</div>
+
+                        {/*Card - Ecommerce One*/}                        
+                        <div>{props.ecommerceOneCompString}</div>
                     </div>
                 </div>
             </div>

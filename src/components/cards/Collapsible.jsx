@@ -35,8 +35,8 @@ export default function Collapsible(){
     }
 
    let collapsibleComp = (
-    <div className="border border-gray-100 rounded-lg" style={{"width":"416px", "height":"223px"}}>
-        <div className="w-full h-1/3 px-5 flex justify-start items-center rounded-t-lg bg-gray-50">
+    <div className="border border-gray-100 rounded-lg" style={{"width":"416px", "height":"auto"}}>
+        <div className="w-full px-5 py-3 flex justify-start items-center rounded-t-lg bg-gray-50">
             <div className="w-1/2 flex justify-start">
                 <div className="leading-normal">
                     <h4 className={"p-0 m-0 font-bold " + collapsibleState.selectedFont}>Header</h4>
@@ -54,10 +54,10 @@ export default function Collapsible(){
                 </div>
             </div>
         </div>
-        <div className="w-full h-2/3 px-5 flex justify-center items-center rounded-lg bg-white">
+        <div className="w-full px-5 flex justify-center items-center rounded-lg bg-white">
             <div className="leading-normal">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat, tellus eu blandit viverra, velit leo efficitur velit, 
-                    eu condimentum dui leo vel nisl. Sed blandit fringilla ante, quis bibendum justo molestie eu. Proin mollis nulla vel enim malesuada, ac accumsan sem auctor.</p>
+                <p className={collapsibleState.selectedFont}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat, tellus eu blandit viverra, velit leo efficitur velit, 
+                    eu condimentum dui leo SeSed blandit fringilla ante, quis bibenvel nisl. Sed blandit fringilla ante, quis bibendum justo molestie eu. Proin mollis nulla vel enim malesuada, ac accumsan sem auctor.</p>
             </div>
         </div>
     </div>

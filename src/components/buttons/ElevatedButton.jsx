@@ -5,7 +5,7 @@ export default function ElevatedButton(){
 
     const [elevatedButtonState, setElevatedButtonState] = useState({
         showColor: false,
-        selectedColor:"bg-night-500",
+        selectedColor:"bg-gray-100",
         selectedFont:"font-helvetica",
      });
 
@@ -45,7 +45,7 @@ export default function ElevatedButton(){
         <div>
             {/*Standard*/}
             <div className="flex justify-center items-center bg-white">
-                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-800 bg-gray-100 hover:bg-gray-200 focus:bg-gray-200 active:bg-gray-300" style={{"box-shadow": "0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15)"}}>
+                <button className={"py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-800 hover:bg-gray-200 focus:bg-gray-200 active:bg-gray-300 " + elevatedButtonState.selectedColor + " " + elevatedButtonState.selectedFont } style={{"box-shadow": "0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15)"}}>
                     Enabled
                 </button>
                 <button className="py-1 px-5 rounded-lg font-medium text-gray-800 bg-gray-200 ml-3" style={{"box-shadow": "0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15)"}}>
@@ -64,7 +64,7 @@ export default function ElevatedButton(){
 
             {/*Plus Left*/}
             <div className="flex justify-center items-center bg-white mt-5">
-                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-800 bg-gray-100 hover:bg-gray-200 focus:bg-gray-200 active:bg-gray-300" style={{"box-shadow": "0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15)"}}>
+                <button className={"py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-800 hover:bg-gray-200 focus:bg-gray-200 active:bg-gray-300 " + elevatedButtonState.selectedColor + " " + elevatedButtonState.selectedFont } style={{"box-shadow": "0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15)"}}>
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                             <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#444545"/>
@@ -111,7 +111,7 @@ export default function ElevatedButton(){
 
             {/*Plus Right*/}
             <div className="flex justify-center items-center bg-white mt-5">
-                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-800 bg-gray-100 hover:bg-gray-200 focus:bg-gray-200 active:bg-gray-300" style={{"box-shadow": "0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15)"}}>
+                <button className={"py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-800 hover:bg-gray-200 focus:bg-gray-200 active:bg-gray-300 " + elevatedButtonState.selectedColor + " " + elevatedButtonState.selectedFont } style={{"box-shadow": "0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15)"}}>
                     <div className="mr-3">Enabled</div>
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">

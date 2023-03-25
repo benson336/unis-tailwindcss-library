@@ -189,15 +189,15 @@ export const navigation = [
     links: [
       { title: 'Badge', href: '/' },
       { title: 'Colors', href: '/colors' },
-      { title: 'Components', href: '/test' },
-      { title: 'Quickstart', href: '/quickstart' },
+      /*{ title: 'Components', href: '/test' },*/
+       /*{ title: 'Quickstart', href: '/quickstart' },*/
       { title: 'Buttons', href: '/buttons' },
       { title: 'Cards', href: '/cards' },
-      { title: 'SDK', href: '/sdks' },
+      /*{ title: 'SDK', href: '/sdks' },
       { title: 'Checkboxes', href: '/authentication' },
       { title: 'Chips', href: '/pagination' },
       { title: 'Dashboard', href: '/errors' },
-      { title: 'Date Pickers', href: '/webhooks' },
+      { title: 'Date Pickers', href: '/webhooks' },*/
       /*{ title: 'Dialogs', href: '/test' },
       { title: 'Dividers', href: '/test' },
       { title: 'Floating Action Button', href: '/test' },

@@ -46,11 +46,11 @@ export default function Kanban(){
 
     let kanbanComp = (
             
-                <div className="border rounded-xl" style={{"width":"348px", "height":"464px"}}>
+                <div className="border rounded-xl" style={{"width":"416px", "height":"486px"}}>
                     <div className="px-5 w-full flex justify-start items-center" style={{"height":"12%"}}>
                         <div className="w-1/2 flex justify-start items-center">
                             <div className="leading-normal">
-                                <h4 className={"p-0 m-0 font-bold " + kanbanState.selectedFont}>Title</h4>
+                                <h3 className={"p-0 m-0 font-bold " + kanbanState.selectedFont}>Title</h3>
                             </div>
                         </div>
                         <div className="w-1/2 flex justify-end items-center">
@@ -62,34 +62,101 @@ export default function Kanban(){
                         </div>
                     </div>
                     <div className="px-5 w-full leading-snug">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat, tellus eu blandit viverra, velit leo efficitur velit, eu condimentum dui leo 
-                        vel nisl. Sed blandit fringilla ante, quis bibendum justo molestie eu. Proin mollis nulla vel enim malesuada.</p>
+                        <p className={"p-0 m-0 " + kanbanState.selectedFont}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat, tellus eu blandit viverra, velit leo efficitur velit, eu condimentum dui leo 
+                        vel nisl. Sed blandit fringilla ante, quis bibendum justo molestie eu.</p>
                     </div> 
 
-                    
 
                     <div className="px-5 py-4 w-full">
-                        <div className="flex leading-normal">
-                            <div className={"flex items-center px-3 bg-gray-200 border rounded-full " + kanbanState.selectedFont}>
-                                Tag
+                        <div className="flex leading-normal font-semibold">
+                            <div className="py-1 px-4 flex items-center bg-gray-200 border-0 rounded-full">
+                                <p className={"p-0 m-0 text-xs " + kanbanState.selectedFont}>Tag</p>
                             </div>
-                            <div className={"py-1 px-3 bg-gray-200 border rounded-full " + kanbanState.selectedFont}>
-                                Priority
+                            <div className="py-1 px-4 ml-2 bg-[#D6FCE7] border-0 rounded-full">
+                                <p className={"p-0 m-0 text-[#268C55] text-xs " + kanbanState.selectedFont}>Priority</p>
                             </div>
-                            <div className={"py-1 px-3 bg-gray-200 border rounded-full " + kanbanState.selectedFont}>
-                                Status
+                            <div className="py-1 px-4 ml-2 bg-gray-200 border-0 rounded-full">
+                                <p className={"p-0 m-0 text-xs " + kanbanState.selectedFont}>Status</p>
                             </div>
                         </div>
-                        <div className="leading-tight">
-                            <p className={kanbanState.selectedFont}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                        <div className="my-5 leading-tight border-y-2 border-gray-100">
+                            <div className="w-full flex justify-start items-center">
+                                <div className="w-1/2 flex justify-start items-center">
+                                    <div>
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="0.5" width="47" height="47" rx="7.5" fill="white"/>
+                                            <path d="M33.3333 14.6667V33.3333H14.6667V14.6667H33.3333ZM33.3333 12H14.6667C13.2 12 12 13.2 12 14.6667V33.3333C12 34.8 13.2 36 14.6667 36H33.3333C34.8 36 36 34.8 36 33.3333V14.6667C36 13.2 34.8 12 33.3333 12ZM26.8533 23.8133L22.8533 28.9733L20 25.52L16 30.6667H32L26.8533 23.8133Z" fill="#CECECE"/>
+                                        <rect x="0.5" y="0.5" width="47" height="47" rx="7.5" stroke="#CECECE"/>
+                                    </svg>
+
+                                    </div>
+                                    <div className="ml-10% leading-normal">
+                                        <h4 className={"p-0 m-0 font-bold " + kanbanState.selectedFont}>Item Name</h4>
+                                        <p className={"p-0 m-0 " + kanbanState.selectedFont}>Item Description</p>
+                                    </div>
+                                </div>
+                                <div className="w-1/2 flex justify-end items-center">
+                                    <p className={"font-bold " + kanbanState.selectedFont}>QTY</p>
+                                    <p className={"ml-2 " + kanbanState.selectedFont}>UOM</p>
+                                </div>   
+                            </div>
+                            <div className="w-full flex justify-start items-center">
+                                <div className="w-1/2 flex justify-start items-center">
+                                    <div>
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="0.5" width="47" height="47" rx="7.5" fill="white"/>
+                                            <path d="M33.3333 14.6667V33.3333H14.6667V14.6667H33.3333ZM33.3333 12H14.6667C13.2 12 12 13.2 12 14.6667V33.3333C12 34.8 13.2 36 14.6667 36H33.3333C34.8 36 36 34.8 36 33.3333V14.6667C36 13.2 34.8 12 33.3333 12ZM26.8533 23.8133L22.8533 28.9733L20 25.52L16 30.6667H32L26.8533 23.8133Z" fill="#CECECE"/>
+                                        <rect x="0.5" y="0.5" width="47" height="47" rx="7.5" stroke="#CECECE"/>
+                                    </svg>
+
+                                    </div>
+                                    <div className="ml-10% leading-normal">
+                                        <h4 className={"p-0 m-0 font-bold " + kanbanState.selectedFont}>Item Name</h4>
+                                        <p className={"p-0 m-0 " + kanbanState.selectedFont}>Item Description</p>
+                                    </div>
+                                </div>
+                                <div className="w-1/2 flex justify-end items-center">
+                                    <p className={"font-bold " + kanbanState.selectedFont}>QTY</p>
+                                    <p className={"ml-2 " + kanbanState.selectedFont}>UOM</p>
+                                </div>   
+                            </div>
+                            <div className="w-full flex justify-start items-center">
+                                <div className="w-1/2 flex justify-start items-center">
+                                    <div>
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="0.5" width="47" height="47" rx="7.5" fill="white"/>
+                                            <path d="M33.3333 14.6667V33.3333H14.6667V14.6667H33.3333ZM33.3333 12H14.6667C13.2 12 12 13.2 12 14.6667V33.3333C12 34.8 13.2 36 14.6667 36H33.3333C34.8 36 36 34.8 36 33.3333V14.6667C36 13.2 34.8 12 33.3333 12ZM26.8533 23.8133L22.8533 28.9733L20 25.52L16 30.6667H32L26.8533 23.8133Z" fill="#CECECE"/>
+                                        <rect x="0.5" y="0.5" width="47" height="47" rx="7.5" stroke="#CECECE"/>
+                                    </svg>
+
+                                    </div>
+                                    <div className="ml-10% leading-normal">
+                                        <h4 className={"p-0 m-0 font-bold " + kanbanState.selectedFont}>Item Name</h4>
+                                        <p className={"p-0 m-0 " + kanbanState.selectedFont}>Item Description</p>
+                                    </div>
+                                </div>
+                                <div className="w-1/2 flex justify-end items-center">
+                                    <p className={"font-bold " + kanbanState.selectedFont}>QTY</p>
+                                    <p className={"ml-2 " + kanbanState.selectedFont}>UOM</p>
+                                </div>   
+                            </div>
                         </div>
-                        <div className="flex justify-end">
-                            <button className={"py-1 px-5 border border-solid rounded-lg text-[#444545] hover:bg-[#989A9C] focus:bg-[#989A9C] active:bg-[#777879] " + kanbanState.selectedFont}>
-                                Cancel
-                            </button>
-                            <button className={"py-1 px-5 ml-2 rounded-lg text-white " + kanbanState.selectedColor + " hover:bg-[#989A9C] focus:bg-[#989A9C] active:bg-[#777879] " + kanbanState.selectedFont}>
-                                Enabled
-                            </button>
+                        <div className="flex jusify-center items-center">
+                            <div className="w-1/2 flex justify-start items-center">
+                                <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 2H17V0H15V2H5V0H3V2H2C0.9 2 0 2.9 0 4V20C0 21.1 0.9 22 2 22H18C19.1 22 20 21.1 20 20V4C20 2.9 19.1 2 18 2ZM18 20H2V9H18V20ZM18 7H2V4H18V7Z" fill="#88898B"/>
+                                </svg>
+                                <p className={"p-0 m-0 ml-2 " + kanbanState.selectedFont}>Date</p>
+                            </div> 
+
+                            <div className="w-1/2 flex justify-end items-center">
+                                <button className={"py-1 px-5 border border-solid rounded-lg text-[#444545] hover:bg-[#989A9C] focus:bg-[#989A9C] active:bg-[#777879] " + kanbanState.selectedFont}>
+                                    Cancel
+                                </button>
+                                <button className={"py-1 px-5 ml-2 rounded-lg text-white " + kanbanState.selectedColor + " hover:bg-[#989A9C] focus:bg-[#989A9C] active:bg-[#777879] " + kanbanState.selectedFont}>
+                                    Enabled
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

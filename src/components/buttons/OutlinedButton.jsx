@@ -5,7 +5,7 @@ export default function OutlinedButton(){
 
     const [outlinedButtonState, setOutlinedButtonState] = useState({
         showColor: false,
-        selectedColor:"bg-night-500",
+        selectedColor:"bg-white",
         selectedFont:"font-helvetica",
      });
 
@@ -45,7 +45,7 @@ export default function OutlinedButton(){
         <div>
             {/*Standard*/}
             <div className="flex justify-center items-center bg-white">
-                <button className="py-1 px-5 flex justify-center items-center border border-solid border-gray-800 rounded-lg font-medium text-gray-800 bg-white hover:bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
+                <button className={"py-1 px-5 flex justify-center items-center border border-solid border-gray-800 rounded-lg font-medium text-gray-800 hover:bg-gray-100 focus:bg-gray-100 active:bg-gray-200 " + outlinedButtonState.selectedFont + " " + outlinedButtonState.selectedColor}>
                     Enabled
                 </button>
                 <button className="py-1 px-5 border border-solid border-gray-800 rounded-lg font-medium text-gray-800 bg-gray-100 ml-3">
@@ -64,7 +64,7 @@ export default function OutlinedButton(){
 
             {/*Plus Left*/}
             <div className="flex justify-center items-center bg-white mt-5">
-                <button className="py-1 px-5 flex justify-center items-center border border-solid border-gray-800 rounded-lg font-medium text-gray-800 bg-white hover:bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
+                <button className={"py-1 px-5 flex justify-center items-center border border-solid border-gray-800 rounded-lg font-medium text-gray-800 hover:bg-gray-100 focus:bg-gray-100 active:bg-gray-200 " + outlinedButtonState.selectedFont + " " + outlinedButtonState.selectedColor}>
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                             <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#444545"/>
@@ -111,7 +111,7 @@ export default function OutlinedButton(){
 
             {/*Plus Right*/}
             <div className="flex justify-center items-center bg-white mt-5">
-                <button className="py-1 px-5 flex justify-center items-center border border-solid border-gray-800 rounded-lg font-medium text-gray-800 bg-white hover:bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
+                <button className={"py-1 px-5 flex justify-center items-center border border-solid border-gray-800 rounded-lg font-medium text-gray-800 hover:bg-gray-100 focus:bg-gray-100 active:bg-gray-200 " + outlinedButtonState.selectedFont + " " + outlinedButtonState.selectedColor}>
                     <div className="mr-3">Enabled</div>
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">

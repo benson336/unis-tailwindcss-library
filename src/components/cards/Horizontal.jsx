@@ -35,7 +35,7 @@ export default function Sample(){
     }
 
    let horizontalComp = (
-                <div className="flex justify-start items-center border rounded-xl" style={{"width":"356px", "height":"80px"}}>
+                <div className="flex justify-start items-center border rounded-xl" style={{"width":"356px", "height":"auto"}}>
                     <div className="w-1/2 flex justify-start items-center">
                         <div className="ml-10%">
                             <p className={"w-8 h-8 p-0 m-0 text-base font-medium text-center text-[#1c1e33] rounded-full " + horizontalState.selectedColor}>A</p>
@@ -46,7 +46,7 @@ export default function Sample(){
                         </div>
                     </div>
                     <div className="w-1/2 flex justify-end items-center">
-                        <img src="vvv.png" className="w-20 h-20 m-0 p-0 object-cover border rounded-r-xl" />
+                        <img src="vvv.png" className="w-20 h-20 m-0 p-0 object-cover border rounded-r-xl" width="100%"/>
                     </div>
                 </div>
     )

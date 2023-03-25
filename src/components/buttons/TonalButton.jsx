@@ -5,7 +5,7 @@ export default function TonalButton(){
 
     const [tonalButtonState, setTonalButtonState] = useState({
         showColor: false,
-        selectedColor:"bg-night-500",
+        selectedColor:"bg-gray-100",
         selectedFont:"font-helvetica",
      });
 
@@ -45,7 +45,7 @@ export default function TonalButton(){
         <div>
             {/*Standard*/}
             <div className="flex justify-center items-center bg-white">
-                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-800 bg-gray-100 hover:bg-gray-200 focus:bg-gray-200 active:bg-gray-300">
+                <button className={"py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-800 hover:bg-gray-200 focus:bg-gray-200 active:bg-gray-300 " + tonalButtonState.selectedColor + " " + tonalButtonState.selectedFont}>
                     Enabled
                 </button>
                 <button className="py-1 px-5 rounded-lg font-medium text-gray-800 bg-gray-200 ml-3">
@@ -64,7 +64,7 @@ export default function TonalButton(){
 
             {/*Plus Left*/}
             <div className="flex justify-center items-center bg-white mt-5">
-                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-800 bg-gray-100 hover:bg-gray-200 focus:bg-gray-200 active:bg-gray-300">
+                <button className={"py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-800 hover:bg-gray-200 focus:bg-gray-200 active:bg-gray-300 " + tonalButtonState.selectedColor + " " + tonalButtonState.selectedFont}>
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                             <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#444545"/>
@@ -111,7 +111,7 @@ export default function TonalButton(){
 
             {/*Plus Right*/}
             <div className="flex justify-center items-center bg-white mt-5">
-                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-800 bg-gray-100 hover:bg-gray-200 focus:bg-gray-200 active:bg-gray-300">
+                <button className={"py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-800 hover:bg-gray-200 focus:bg-gray-200 active:bg-gray-300 " + tonalButtonState.selectedColor + " " + tonalButtonState.selectedFont}>
                     <div className="mr-3">Enabled</div>
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">

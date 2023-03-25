@@ -5,7 +5,7 @@ export default function FilledButton(){
 
     const [fillButtonState, setFillButtonState] = useState({
         showColor: false,
-        selectedColor:"bg-night-500",
+        selectedColor:"bg-gray-800",
         selectedFont:"font-helvetica",
      });
 
@@ -49,7 +49,7 @@ export default function FilledButton(){
                 + fillButtonState.selectedFont}>
                     Enabled
                 </button>*/}
-                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-white bg-gray-800 hover:bg-gray-400 focus:bg-gray-400 active:bg-gray-600">
+                <button className={"py-1 px-5 flex justify-center items-center rounded-lg font-medium text-white " + fillButtonState.selectedColor + " hover:bg-gray-400 focus:bg-gray-400 active:bg-gray-600 " + fillButtonState.selectedFont}>
                     Enabled
                 </button>
                 <button className="py-1 px-5 rounded-lg font-medium text-white bg-gray-400 ml-3">
@@ -68,7 +68,7 @@ export default function FilledButton(){
 
             {/*Plus Left*/}
             <div className="flex justify-center items-center bg-white mt-5">
-                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-white bg-gray-800 hover:bg-gray-400 focus:bg-gray-400 active:bg-gray-600">
+                <button className={"py-1 px-5 flex justify-center items-center rounded-lg font-medium text-white " + fillButtonState.selectedColor + " hover:bg-gray-400 focus:bg-gray-400 active:bg-gray-600 " + fillButtonState.selectedFont}>
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                             <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="white"/>
@@ -115,7 +115,7 @@ export default function FilledButton(){
 
             {/*Plus Right*/}
             <div className="flex justify-center items-center bg-white mt-5">
-                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-white bg-gray-800 hover:bg-gray-400 focus:bg-gray-400 active:bg-gray-600">
+                <button className={"py-1 px-5 flex justify-center items-center rounded-lg font-medium text-white " + fillButtonState.selectedColor + " hover:bg-gray-400 focus:bg-gray-400 active:bg-gray-600 " + fillButtonState.selectedFont}>
                     <div className="mr-3">Enabled</div>
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">

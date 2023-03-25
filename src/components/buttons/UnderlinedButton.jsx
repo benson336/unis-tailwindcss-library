@@ -5,7 +5,7 @@ export default function UnderlinedButton(){
 
     const [underlinedButtonState, setUnderlinedButtonState] = useState({
         showColor: false,
-        selectedColor:"bg-night-500",
+        selectedColor:"bg-white",
         selectedFont:"font-helvetica",
      });
 
@@ -45,7 +45,7 @@ export default function UnderlinedButton(){
         <div>
             {/*Standard*/}
             <div className="flex justify-center items-center bg-white">
-                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-900 bg-white hover:text-gray-400 focus:text-gray-500 active:text-gray-700">
+                <button className={"py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-900 hover:text-gray-400 focus:text-gray-500 active:text-gray-700 " + underlinedButtonState.selectedColor + " " + underlinedButtonState.selectedFont}>
                     Enabled
                 </button>
                 <button className="py-1 px-5 rounded-lg font-medium text-gray-400 bg-white ml-3">
@@ -64,7 +64,7 @@ export default function UnderlinedButton(){
 
             {/*Plus Left*/}
             <div className="flex justify-center items-center bg-white mt-5">
-                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-900 bg-white hover:text-gray-400 focus:text-gray-500 active:text-gray-700">
+                <button className={"py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-900 hover:text-gray-400 focus:text-gray-500 active:text-gray-700 " + underlinedButtonState.selectedColor + " " + underlinedButtonState.selectedFont}>
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                             <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#323232"/>
@@ -111,7 +111,7 @@ export default function UnderlinedButton(){
 
             {/*Plus Right*/}
             <div className="flex justify-center items-center bg-white mt-5">
-                <button className="py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-900 bg-white hover:text-gray-400 focus:text-gray-500 active:text-gray-700">
+                <button className={"py-1 px-5 flex justify-center items-center rounded-lg font-medium text-gray-900 hover:text-gray-400 focus:text-gray-500 active:text-gray-700 " + underlinedButtonState.selectedColor + " " + underlinedButtonState.selectedFont}>
                     <div className="mr-3">Enabled</div>
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">

@@ -46,8 +46,8 @@ export default function Stacked(){
 
     let stackedComp = (
             
-                <div className="border rounded-xl" style={{"width":"348px", "height":"464px"}}>
-                    <div className="px-5 w-full flex justify-start items-center" style={{"height":"15%"}}>
+                <div className="border rounded-xl" style={{"width":"348px", "height":"auto"}}>
+                    <div className="px-5 py-3 w-full flex justify-start items-center">
                         <div className="w-1/2 flex justify-start items-center">
                             <div>
                                 <p className={"w-8 h-8 p-0 m-0 text-base font-medium text-center text-[#1c1e33] rounded-full " + stackedState.selectedColor}>A</p>
@@ -67,7 +67,7 @@ export default function Stacked(){
                     </div>
 
                     <div>
-                        <img src="ddd.png" className="object-cover m-0" />
+                        <img src="ddd.png" className="object-cover m-0" width="100%"/>
                     </div>
 
                     <div className="px-5 py-4 w-full">
@@ -76,7 +76,8 @@ export default function Stacked(){
                             <p className={"p-0 m-0 " + stackedState.selectedFont}>Subtitle</p>
                         </div>
                         <div className="leading-tight">
-                            <p className={stackedState.selectedFont}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <p className={stackedState.selectedFont}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor sit amet, 
+                            consectetur adipiscing elit, sed do eiusmod afasdfasfdddddd sectetur adipiscing elit, sed do eiusmod afasdfas</p>
                         </div>
                         <div className="flex justify-end">
                             <button className={"py-1 px-5 border border-solid rounded-lg text-[#444545] hover:bg-[#989A9C] focus:bg-[#989A9C] active:bg-[#777879] " + stackedState.selectedFont}>

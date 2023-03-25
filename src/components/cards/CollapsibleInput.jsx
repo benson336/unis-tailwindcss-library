@@ -35,8 +35,8 @@ export default function CollapsibleInput(){
     }
 
    let collapsibleInputComp = (
-    <div className="border border-gray-100 rounded-lg" style={{"width":"696px", "height":"223px"}}>
-        <div className="w-full h-1/3 px-5 flex justify-start items-center rounded-t-lg bg-gray-50">
+    <div className="border border-gray-100 rounded-lg" style={{"width":"696px", "height":"auto"}}>
+        <div className="w-full px-5 py-3 flex justify-start items-center rounded-t-lg bg-gray-50">
             <div className="w-1/2 flex justify-start">
                 <div className="leading-normal">
                     <h4 className={"p-0 m-0 font-bold " + collapsibleInputState.selectedFont}>Header</h4>
@@ -54,26 +54,26 @@ export default function CollapsibleInput(){
                 </div>
             </div>
         </div>
-        <div className="w-full h-2/3 px-10 flex justify-center items-center rounded-lg bg-white">
+        <div className="w-full px-10 py-5 flex justify-center items-center rounded-lg bg-white">
             <div className="w-1/4">
-                <div className="font-bold"><h4>Label</h4></div>
+                <div className={"font-bold " + collapsibleInputState.selectedFont}><h4>Label</h4></div>
                 <input className="border border-gray-200 rounded-lg w-11/12" value="Input"></input>
-                <div><p className="m-0 text-gray-500">supporting text</p></div>
+                <div><p className={"m-0 text-gray-500 " + collapsibleInputState.selectedFont}>supporting text</p></div>
             </div>
             <div className="w-1/4 ml-3">
-                <div className="font-bold"><h4>Label</h4></div>
+                <div className={"font-bold " + collapsibleInputState.selectedFont}><h4>Label</h4></div>
                 <input className="border border-gray-200 rounded-lg w-11/12" value="Input"></input>
-                <div><p className="m-0 text-gray-500">supporting text</p></div>
+                <div><p className={"m-0 text-gray-500 " + collapsibleInputState.selectedFont}>supporting text</p></div>
             </div>
             <div className="w-1/4 ml-3">
-                <div className="font-bold"><h4>Label</h4></div>
+                <div className={"font-bold " + collapsibleInputState.selectedFont}><h4>Label</h4></div>
                 <input className="border border-gray-200 rounded-lg w-11/12" value="Input"></input>
-                <div><p className="m-0 text-gray-500">supporting text</p></div>
+                <div><p className={"m-0 text-gray-500 " + collapsibleInputState.selectedFont}>supporting text</p></div>
             </div>
             <div className="w-1/4 ml-3">
-                <div className="font-bold"><h4>Label</h4></div>
+                <div className={"font-bold " + collapsibleInputState.selectedFont}><h4>Label</h4></div>
                 <input className="border border-gray-200 rounded-lg w-11/12" value="Input"></input>
-                <div><p className="m-0 text-gray-500">supporting text</p></div>
+                <div><p className={"m-0 text-gray-500 " + collapsibleInputState.selectedFont}>supporting text</p></div>
             </div>
         </div>
     </div>
