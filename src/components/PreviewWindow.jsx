@@ -64,12 +64,12 @@ export default function PreviewWindow(props){
 
     return(
 
-        <div className="bg-gray-50 rounded-lg justify-around items-top relative" style={{"width":"100%", "height":"1200px" ,"border":"1px solid rgb(229 231 235)"}}>
+        <div className="bg-gray-50 rounded-lg justify-around items-top relative" style={{"border":"1px solid rgb(229 231 235)"}}>
 
-            <div className="flex justify-around items-center text-center rounded-lg" style={{"width":"100%", "height":"10%"}}>
+            <div className="py-8 flex justify-around items-center text-center rounded-lg">
 
                 <div style={{"border":"1px solid rgb(229 231 235)", "cursor":"pointer"}} className="px-2 py-1 flex justify-center items-center font-medium rounded-lg bg-white 
-                hover:bg-gray-100 text-gray-900 hover:text-blue-700" onClick={toggleShow}>
+                hover:bg-gray-100 text-gray-900 hover:text-blue-700">
                     <svg className="ml-2 mr-2" width={13} height={15} viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                         <path
                             d="M9.33333 0H1.33333C0.6 0 0 0.6 0 1.33333V10.6667H1.33333V1.33333H9.33333V0ZM11.3333 2.66667H4C3.26667 2.66667 2.66667 3.26667 2.66667 4V13.3333C2.66667 14.0667 3.26667 14.6667 4 14.6667H11.3333C12.0667 14.6667 12.6667 14.0667 12.6667 13.3333V4C12.6667 3.26667 12.0667 2.66667 11.3333 2.66667ZM11.3333 13.3333H4V4H11.3333V13.3333Z"
@@ -188,7 +188,7 @@ export default function PreviewWindow(props){
             </div>
 
 
-                    <div className="flex justify-center items-center bg-white items-center" style={{"width":"100%", "height":"45%"}}>
+                    <div className="py-20 flex justify-center items-center bg-white items-center">
 
                         {/*Button - FilledButton*/}
                         <div>{props.filledButtonComp}</div>
@@ -259,15 +259,28 @@ export default function PreviewWindow(props){
                         {/*Card - Ecommerce One*/}                        
                         <div>{props.ecommerceOneComp}</div>
                       
+                        {/*Card - Ecommerce Two*/}                        
+                        <div>{props.ecommerceTwoComp}</div>
 
+                        {/*Card - Ecommerce Three*/}                        
+                        <div>{props.ecommerceThreeComp}</div>
+
+                        {/*Card - Ecommerce Four*/}                        
+                        <div>{props.ecommerceFourComp}</div>
+
+                        {/*Card - Ecommerce Five*/}                        
+                        <div>{props.ecommerceFiveComp}</div>
+
+                        {/*Card - Ecommerce Six*/}                        
+                        <div>{props.ecommerceSixComp}</div>
 
                     </div>
 
                     
 
             {previewState.showCode ? 
-            <div className="flex justify-center items-center absolute bg-gray-800" style={{"width":"100%", "height":"88%", "borderTop":"1px solid rgb(229 231 235)", "top":"10%"}}>
-                    <div className="text-xs text-green-400 ml-5 pt-5">
+            <div className="flex justify-center items-center absolute bg-gray-800" style={{"borderTop":"1px solid rgb(229 231 235)"}}>
+                    <div className="text-xs text-green-400 ml-5">
                         {/*Button - FilledButton*/}
                         <div>{props.filledButtonCompString}</div>
 
@@ -311,7 +324,7 @@ export default function PreviewWindow(props){
                         <div>{props.buttonLogoCompString}</div>
 
                         {/*Button - Button Radio*/}
-                        <div>{props.buttonRadioComp}</div>
+                        <div>{props.buttonRadioCompString}</div>
                         
 
                         {/*-------------------------------------*/}
@@ -336,10 +349,25 @@ export default function PreviewWindow(props){
 
                         {/*Card - Ecommerce One*/}                        
                         <div>{props.ecommerceOneCompString}</div>
+
+                        {/*Card - Ecommerce Two*/}                        
+                        <div>{props.ecommerceTwoCompString}</div>
+
+                        {/*Card - Ecommerce Three*/}                        
+                        <div>{props.ecommerceThreeCompString}</div>
+
+                        {/*Card - Ecommerce Four*/}                        
+                        <div>{props.ecommerceFourCompString}</div>
+
+                        {/*Card - Ecommerce Five*/}                        
+                        <div>{props.ecommerceFiveCompString}</div>
+
+                        {/*Card - Ecommerce Six*/}                        
+                        <div>{props.ecommerceSixCompString}</div>
                     </div>
             </div> : 
-            <div className="justify-center items-center bg-gray-800" style={{"width":"100%", "height":"45%", "borderTop":"1px solid rgb(229 231 235)"}}>
-                <div className="flex justify-between items-center bg-gray-900" style={{"width":"100%", "height":"15%"}}>
+            <div className="justify-center items-center bg-gray-800 rounded-lg" style={{"borderTop":"1px solid rgb(229 231 235)"}}>
+                <div className="py-5 flex justify-between items-center bg-gray-900">
                     <div className="flex justify-center items-center">
                         <div className="text-xs text-green-400 ml-5">HTML</div>
                         <div className="text-xs text-white ml-5">tailwind.config.js</div>
@@ -348,8 +376,8 @@ export default function PreviewWindow(props){
                         <div className="text-xs text-white">Copy code</div>
                     </div>
                 </div>
-                <div className="bg-gray-800" style={{"width":"100%", "height":"85%"}}>
-                    <div className="text-xs text-green-400 ml-5 pt-5">
+                <div className="py-10 bg-gray-800 rounded-lg">
+                    <div className="text-xs text-green-400 ml-5">
                         {/*Button - FilledButton*/}
                         <div>{props.filledButtonCompString}</div>
 
@@ -417,6 +445,21 @@ export default function PreviewWindow(props){
 
                         {/*Card - Ecommerce One*/}                        
                         <div>{props.ecommerceOneCompString}</div>
+
+                        {/*Card - Ecommerce Two*/}                        
+                        <div>{props.ecommerceTwoCompString}</div>
+
+                        {/*Card - Ecommerce Three*/}                        
+                        <div>{props.ecommerceThreeCompString}</div>
+
+                        {/*Card - Ecommerce Four*/}                        
+                        <div>{props.ecommerceFourCompString}</div>
+
+                        {/*Card - Ecommerce Five*/}                        
+                        <div>{props.ecommerceFiveCompString}</div>
+
+                        {/*Card - Ecommerce Six*/}                        
+                        <div>{props.ecommerceSixCompString}</div>
                     </div>
                 </div>
             </div>

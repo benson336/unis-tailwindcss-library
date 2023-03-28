@@ -43,7 +43,7 @@ export default function ButtonOption(){
 
     let buttonOptionComp = (
         <div>
-            <div className="flex justify-center items-center bg-white mt-5">
+            <div className="flex justify-center items-center bg-white mt-5" style={{"marginBottom":"100px"}}>
                 <button className="relative py-1 px-4 flex justify-center items-center border border-solid border-gray-800 rounded-lg font-medium text-gray-800 bg-white">
                     <div className="mr-3">Option</div>
                     <div>

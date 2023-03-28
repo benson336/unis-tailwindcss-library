@@ -43,7 +43,7 @@ export default function ButtonFilter(){
 
     let buttonFilterComp = (
         <div>
-                <button className="relative py-2 px-6 flex justify-center items-center rounded-lg font-medium text-gray-800 bg-white hover:bg-gray-100 active:bg-gray-200">
+                <button className="relative py-2 px-6 flex justify-center items-center rounded-lg font-medium text-gray-800 bg-gray-50 hover:bg-gray-100 active:bg-gray-200" style={{"marginBottom":"100px"}}>
                     <div>
                         <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                             <path d="M11.25 6.75H6.75V11.25H5.25V6.75H0.75V5.25H5.25V0.75H6.75V5.25H11.25V6.75Z" fill="#444545"/>

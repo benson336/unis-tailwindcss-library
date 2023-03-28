@@ -55,9 +55,9 @@ export default function EcommerceOne(){
                         </svg>
                     </div>
                     <div className="py-4 px-4 border-r-2 border-gray-100">
-                        <h3 className="p-0 m-0 leading-tight">CATEGORY</h3>
-                        <h3 className="p-0 m-0 leading-tight">Product Name</h3>
-                        <p className="p-0 m-0">Unis Item: 00-00-00000</p>
+                        <h3 className={"p-0 m-0 leading-tight font-normal text-gray-400 " + ecommerceOneState.selectedFont}>CATEGORY</h3>
+                        <h3 className={"p-0 m-0 leading-tight " + ecommerceOneState.selectedFont}>Product Name</h3>
+                        <p className={"p-0 m-0 " + ecommerceOneState.selectedFont}>Unis Item: 00-00-00000</p>
                         <input className="border border-gray-100 rounded-lg" value="Add item note..."></input>
                     </div>
                     <div className="py-4 px-4">
@@ -73,12 +73,11 @@ export default function EcommerceOne(){
                         </div>
                         <div><h2 className="m-0 p-0">$1,0000.00</h2></div>
                     </div>
-
                 </div>
            
     )
 
-        let kanbanListCompString = '<div class="flex justify-start items-center border rounded-xl" style={{"width":"356px", "height":"80px"}}><div class="ml-4"><p class="w-8 h-8 p-0 m-0 text-base font-medium text-center text-[#1c1e33] rounded-full ' + ecommerceOneState.selectedColor +'">A</p></div><div class="ml-4 leading-normal"><h4 class="p-0 m-0 font-bold ' + ecommerceOneState.selectedFont + '">Header</h4><p class="p-0 m-0 ' + ecommerceOneState.selectedFont + '">Subheader</p></div><div class="ml-36"><img src="vvv.png" class="w-20 h-20 m-0 p-0 object-cover border rounded-r-xl" /></div></div>'
+        let ecommerceOneCompString = '<div class="flex justify-start items-center border rounded-xl" style={{"width":"356px", "height":"80px"}}><div class="ml-4"><p class="w-8 h-8 p-0 m-0 text-base font-medium text-center text-[#1c1e33] rounded-full ' + ecommerceOneState.selectedColor +'">A</p></div><div class="ml-4 leading-normal"><h4 class="p-0 m-0 font-bold ' + ecommerceOneState.selectedFont + '">Header</h4><p class="p-0 m-0 ' + ecommerceOneState.selectedFont + '">Subheader</p></div><div class="ml-36"><img src="vvv.png" class="w-20 h-20 m-0 p-0 object-cover border rounded-r-xl" /></div></div>'
                         
                         
             
@@ -86,7 +85,7 @@ export default function EcommerceOne(){
         <>
             <PreviewWindow 
             ecommerceOneComp={ecommerceOneComp} 
-            kanbanListCompString={kanbanListCompString}
+            ecommerceOneCompString={ecommerceOneCompString}
             showColor={ecommerceOneState.showColor} 
             selectedColor={ecommerceOneState.selectedColor}
             changeColor={changeColor} 
