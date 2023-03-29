@@ -195,6 +195,7 @@ export const navigation = [
       { title: 'Badges', href: '/badges' },
       { title: 'Cards', href: '/cards' },
       { title: 'Checkboxes', href: '/checkboxes' },
+      { title: 'Datepickers', href: '/datepickers' },
       /*{ title: 'SDK', href: '/sdks' },
       { title: 'Checkboxes', href: '/authentication' },
       { title: 'Chips', href: '/pagination' },

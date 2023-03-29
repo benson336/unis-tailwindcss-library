@@ -52,55 +52,55 @@ export default function Formcard(){
             </div>
             <div className="w-full px-5 pb-4 flex justify-center items-center rounded-lg">
                 <div className="w-1/4">
-                    <div className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></div>
+                    <label className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></label>
                     <input className="h-11 border border-gray-200 rounded w-11/12" value="Input"></input>
                 </div>
                 <div className="w-1/4 ml-3">
-                    <div className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></div>
+                    <label className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></label>
                     <input className="h-11 border border-gray-200 rounded w-11/12" value="Input"></input>
                 </div>
                 <div className="w-1/4 ml-3">
-                    <div className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></div>
+                    <label className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></label>
                     <input className="h-11 border border-gray-200 rounded w-11/12" value="Input"></input>
                 </div>
                 <div className="w-1/4 ml-3">
-                    <div className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></div>
+                    <label className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></label>
                     <input className="h-11 border border-gray-200 rounded w-11/12" value="Input"></input>
                 </div>
             </div>
             <div className="w-full px-5 pb-4 flex justify-center items-center rounded-lg">
                 <div className="w-1/4">
-                    <div className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></div>
+                    <label className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></label>
                     <input className="h-11 border border-gray-200 rounded w-11/12" value="Input"></input>
                 </div>
                 <div className="w-1/4 ml-3">
-                    <div className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></div>
+                    <label className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></label>
                     <input className="h-11 border border-gray-200 rounded w-11/12" value="Input"></input>
                 </div>
                 <div className="w-1/4 ml-3">
-                    <div className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></div>
+                    <label className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></label>
                     <input className="h-11 border border-gray-200 rounded w-11/12" value="Input"></input>
                 </div>
                 <div className="w-1/4 ml-3">
-                    <div className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></div>
+                    <label className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></label>
                     <input className="h-11 border border-gray-200 rounded w-11/12" value="Input"></input>
                 </div>
             </div>
             <div className="w-full px-5 pb-4 flex justify-center items-center rounded-lg">
                 <div className="w-1/4">
-                    <div className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></div>
+                    <label className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></label>
                     <input className="h-11 border border-gray-200 rounded w-11/12" value="Input"></input>
                 </div>
                 <div className="w-1/4 ml-3">
-                    <div className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></div>
+                    <label className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></label>
                     <input className="h-11 border border-gray-200 rounded w-11/12" value="Input"></input>
                 </div>
                 <div className="w-1/4 ml-3">
-                    <div className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></div>
+                    <label className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></label>
                     <input className="h-11 border border-gray-200 rounded w-11/12" value="Input"></input>
                 </div>
                 <div className="w-1/4 ml-3">
-                    <div className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></div>
+                    <label className={"font-bold " + formcardState.selectedFont}><h4>Label</h4></label>
                     <input className="h-11 border border-gray-200 rounded w-11/12" value="Input"></input>
                 </div>
             </div>

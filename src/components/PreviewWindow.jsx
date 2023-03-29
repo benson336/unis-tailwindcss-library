@@ -299,6 +299,10 @@ export default function PreviewWindow(props){
 
                         <div>{props.defaultCheckboxComp}</div>
 
+                        {/*------------------Date Pickers-------------------*/}
+
+                        <div>{props.datepickerVariationComp}</div>
+
                     </div>
 
                     
@@ -415,6 +419,10 @@ export default function PreviewWindow(props){
                         {/*------------------Checkboxes-------------------*/}
 
                         <div>{props.defaultCheckboxCompString}</div>
+
+                        {/*------------------Date Pickers-------------------*/}
+
+                        <div>{props.datepickerVariationCompString}</div>
 
                     </div>
             </div> : 
@@ -539,6 +547,10 @@ export default function PreviewWindow(props){
                         {/*------------------Checkboxes-------------------*/}
 
                         <div>{props.defaultCheckboxCompString}</div>
+
+                        {/*------------------Date Pickers-------------------*/}
+
+                        <div>{props.datepickerVariationCompString}</div>
 
                     </div>
                 </div>
