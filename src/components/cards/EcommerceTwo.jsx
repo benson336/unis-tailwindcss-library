@@ -75,14 +75,14 @@ export default function EcommerceTwo(){
                         </div>
                     </div>
                     <div className="w-full px-4 pb-4 flex justify-start items-center">
-                        <h2 className="m-0 p-0">$1,0000.00</h2>
+                        <h2 className={"m-0 p-0 " + ecommerceTwoState.selectedFont}>$1,0000.00</h2>
                     </div>
                     <div className="w-full px-4 pb-4 flex justify-start items-center">
                         <div className="w-1/2 flex justify-start items-center">
-                            <h2 className={"m-0 p-0 font-normal" + ecommerceTwoState.selectedFont}>SUB-HEADER TEXT</h2>
+                            <h3 className={"m-0 p-0 " + ecommerceTwoState.selectedFont}>SUB-HEADER TEXT</h3>
                         </div>
                         <div className="w-1/2 flex justify-end items-center">
-                            <h2 className="m-0 p-0 text-gray-400">01/01/2023</h2>
+                            <h2 className={"m-0 p-0 text-gray-400 " + ecommerceTwoState.selectedFont}>01/01/2023</h2>
                         </div>
                     </div>
                 </div>

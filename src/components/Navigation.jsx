@@ -187,12 +187,14 @@ export const navigation = [
   {
     title: 'Foundations',
     links: [
-      { title: 'Badge', href: '/' },
+      { title: 'Home', href: '/' },
       { title: 'Colors', href: '/colors' },
       /*{ title: 'Components', href: '/test' },*/
        /*{ title: 'Quickstart', href: '/quickstart' },*/
       { title: 'Buttons', href: '/buttons' },
+      { title: 'Badges', href: '/badges' },
       { title: 'Cards', href: '/cards' },
+      { title: 'Checkboxes', href: '/checkboxes' },
       /*{ title: 'SDK', href: '/sdks' },
       { title: 'Checkboxes', href: '/authentication' },
       { title: 'Chips', href: '/pagination' },

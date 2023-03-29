@@ -117,15 +117,14 @@ export default function PreviewWindow(props){
                     {/*<input onChange={(e) => props.changeColor("test", e)}></input>*/}
                 </div>
                 
-                <div style={{"border":"1px solid rgb(229 231 235)", "cursor":"pointer"}} className="flex justify-center items-center font-medium rounded-lg bg-white 
-                hover:bg-gray-100 text-gray-900 hover:text-blue-700 px-2 py-1">
-                    <div className="text-xs">
-                    <select onChange={props.changeFont}>
+  
+                <div>
+                    <select className="border-gray-100 rounded-lg text-sm font-medium" onChange={props.changeFont} >
                         <option value="font-helvetica">Helvetica Neue</option>
                         <option value="font-lato">Lato</option>
                     </select>
-                    </div>
                 </div>
+         
 
                 <div style={{"border":"1px solid rgb(229 231 235)", "cursor":"pointer"}} className="px-2 py-2 relative z-30 flex justify-center items-center font-medium rounded-lg bg-white hover:bg-gray-100 text-gray-900 hover:text-blue-700">
                 
@@ -190,6 +189,14 @@ export default function PreviewWindow(props){
 
                     <div className="py-20 flex justify-center items-center bg-white items-center">
 
+                        {/*------------------Badges-------------------*/}
+
+                        {/*Badge*/}
+                        <div>{props.badgeComp}</div>
+
+
+                        {/*------------------Buttons-------------------*/}
+
                         {/*Button - FilledButton*/}
                         <div>{props.filledButtonComp}</div>
 
@@ -235,8 +242,7 @@ export default function PreviewWindow(props){
                         {/*Button - Button Radio*/}
                         <div>{props.buttonRadioComp}</div>
                         
-
-                        {/*-------------------------------------*/}
+                        {/*------------------Cards-------------------*/}
 
                         {/*Card - Stacked*/}                        
                         <div>{props.stackedComp}</div>
@@ -274,6 +280,25 @@ export default function PreviewWindow(props){
                         {/*Card - Ecommerce Six*/}                        
                         <div>{props.ecommerceSixComp}</div>
 
+                        {/*Card - File Management*/}                        
+                        <div>{props.fileManagementComp}</div>
+
+                        {/*Card - Cardlist*/}                        
+                        <div>{props.cardlistComp}</div>
+
+                        {/*Card - Boxcard*/}                        
+                        <div>{props.boxcardComp}</div>
+
+                        {/*Card - Logincard*/}                        
+                        <div>{props.logincardComp}</div>
+
+                        {/*Card - Formcard*/}                        
+                        <div>{props.formcardComp}</div>
+
+                        {/*------------------Checkboxes-------------------*/}
+
+                        <div>{props.defaultCheckboxComp}</div>
+
                     </div>
 
                     
@@ -281,6 +306,14 @@ export default function PreviewWindow(props){
             {previewState.showCode ? 
             <div className="flex justify-center items-center absolute bg-gray-800" style={{"borderTop":"1px solid rgb(229 231 235)"}}>
                     <div className="text-xs text-green-400 ml-5">
+
+                        {/*------------------Badges-------------------*/}
+
+                        {/*Badge*/}
+                        <div>{props.badgeCompString}</div>
+
+                        {/*------------------Buttons-------------------*/}
+
                         {/*Button - FilledButton*/}
                         <div>{props.filledButtonCompString}</div>
 
@@ -326,8 +359,7 @@ export default function PreviewWindow(props){
                         {/*Button - Button Radio*/}
                         <div>{props.buttonRadioCompString}</div>
                         
-
-                        {/*-------------------------------------*/}
+                        {/*------------------Cards-------------------*/}
 
                         {/*Card - Stacked*/} 
                         <div>{props.stackedCompString}</div>
@@ -364,6 +396,26 @@ export default function PreviewWindow(props){
 
                         {/*Card - Ecommerce Six*/}                        
                         <div>{props.ecommerceSixCompString}</div>
+
+                        {/*Card - File Management*/}                        
+                        <div>{props.fileManagementCompString}</div>
+
+                        {/*Card - Cardlist*/}                        
+                        <div>{props.cardlistCompString}</div>
+
+                        {/*Card - Boxcard*/}                        
+                        <div>{props.boxcardCompString}</div>
+
+                        {/*Card - Logincard*/}                        
+                        <div>{props.logincardCompString}</div>
+
+                        {/*Card - Formcard*/}                        
+                        <div>{props.formcardCompString}</div>
+
+                        {/*------------------Checkboxes-------------------*/}
+
+                        <div>{props.defaultCheckboxCompString}</div>
+
                     </div>
             </div> : 
             <div className="justify-center items-center bg-gray-800 rounded-lg" style={{"borderTop":"1px solid rgb(229 231 235)"}}>
@@ -378,6 +430,14 @@ export default function PreviewWindow(props){
                 </div>
                 <div className="py-10 bg-gray-800 rounded-lg">
                     <div className="text-xs text-green-400 ml-5">
+
+                        {/*------------------Badges-------------------*/}
+
+                        {/*Badge*/}
+                        <div>{props.badgeCompString}</div>
+                        
+                        {/*------------------Buttons-------------------*/}
+
                         {/*Button - FilledButton*/}
                         <div>{props.filledButtonCompString}</div>
 
@@ -423,7 +483,7 @@ export default function PreviewWindow(props){
                         {/*Button - Button Radio*/}
                         <div>{props.buttonRadioCompString}</div>
 
-                        {/*-------------------------------------*/}
+                        {/*------------------Cards-------------------*/}
 
                         {/*Card - Stacked*/} 
                         <div>{props.stackedCompString}</div>
@@ -460,6 +520,26 @@ export default function PreviewWindow(props){
 
                         {/*Card - Ecommerce Six*/}                        
                         <div>{props.ecommerceSixCompString}</div>
+
+                        {/*Card - File Management*/}                        
+                        <div>{props.fileManagementCompString}</div>
+
+                        {/*Card - Cardlist*/}                        
+                        <div>{props.cardlistCompString}</div>
+
+                        {/*Card - Boxcard*/}                        
+                        <div>{props.boxcardCompString}</div>
+
+                        {/*Card - Logincard*/}                        
+                        <div>{props.logincardCompString}</div>
+
+                        {/*Card - Formcard*/}                        
+                        <div>{props.formcardCompString}</div>
+
+                        {/*------------------Checkboxes-------------------*/}
+
+                        <div>{props.defaultCheckboxCompString}</div>
+
                     </div>
                 </div>
             </div>

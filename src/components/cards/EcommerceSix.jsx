@@ -48,36 +48,36 @@ export default function EcommerceSix(){
             
                 <div className="px-4 py-4 text-center bg-white rounded-xl border" style={{"width":"450px", "height":"auto"}}>
                     <div className="mb-8">
-                        <h2 className="p-0 m-0">Payment Information</h2>
+                        <h2 className={"p-0 m-0 " + ecommerceSixState.selectedFont}>Payment Information</h2>
                     </div>
                     <div className="w-full flex justify-between items-center">
-                        <button className="w-48% px-6 py-2 bg-[#FFC555]">Paypal</button>
-                        <button className="w-48% px-6 py-2 bg-white border border-gray-100">G-Pay</button>
+                        <button className={"w-48% px-6 py-2 bg-[#FFC555] " + ecommerceSixState.selectedFont}>Paypal</button>
+                        <button className={"w-48% px-6 py-2 bg-white border border-gray-100 " + ecommerceSixState.selectedFont}>G-Pay</button>
                     </div>
 
                     <div className="w-full mt-3 flex justify-between items-center">
                         <div className="w-45% border-b"></div>
-                        <div className="text-xs">OR</div>
+                        <div className={"text-xs " + ecommerceSixState.selectedFont}>OR</div>
                         <div className="w-45% border-b"></div>
                     </div>
 
                     <div className="mb-8">
-                        <h3 className="p-0 m-0 text-gray-700 text-sm">Debit / Credid Card</h3>
+                        <h3 className={"p-0 m-0 text-gray-700 text-sm " + ecommerceSixState.selectedFont}>Debit / Credid Card</h3>
                     </div>
                     
                     <div className="w-full mb-3 flex justify-center items-center h-12 bg-gray-50 rounded">
                         <div className="flex justify-center">
                             <input type="radio"></input>
-                            <div className="ml-3"><h3 className="p-0 m-0">Pay Now</h3></div>
+                            <div className="ml-3"><h3 className={"p-0 m-0 " + ecommerceSixState.selectedFont}>Pay Now</h3></div>
                         </div>
                         <div className="flex justify-center ml-5">
                             <input type="radio"></input>
-                            <div className="ml-3"><h3 className="p-0 m-0">Collect</h3></div>
+                            <div className="ml-3"><h3 className={"p-0 m-0 " + ecommerceSixState.selectedFont}>Collect</h3></div>
                         </div>
                     </div>
                         
                     <div className="mb-5">
-                        <h3 className="p-0 m-0 text-gray-500 text-sm">You will be charged once the shipment has been picked up.</h3>
+                        <h3 className={"p-0 m-0 text-gray-500 text-sm " + ecommerceSixState.selectedFont}>You will be charged once the shipment has been picked up.</h3>
                     </div>
 
                     <div className="mb-5">
@@ -94,8 +94,8 @@ export default function EcommerceSix(){
                     </div>
 
                     <div className="w-full flex justify-between items-center">
-                        <button className="w-48% px-6 py-1 bg-white border border-gray-500 rounded-lg">Cancel</button>
-                        <button className="w-48% px-6 py-1 bg-gray-200 rounded-lg">Next</button>
+                        <button className={"w-48% px-6 py-1 bg-white border border-gray-500 rounded-lg " + ecommerceSixState.selectedFont}>Cancel</button>
+                        <button className={"w-48% px-6 py-1 bg-gray-200 rounded-lg " + ecommerceSixState.selectedFont}>Next</button>
                     </div>
                  
  

@@ -71,7 +71,7 @@ export default function EcommerceOne(){
                             <div className="flex justify-center items-center w-6 h-6 bg-white border">1</div>
                             <div className="flex justify-center items-center w-6 h-6 bg-white border">+</div>
                         </div>
-                        <div><h2 className="m-0 p-0">$1,0000.00</h2></div>
+                        <div><h2 className={"m-0 p-0 " + ecommerceOneState.selectedFont}>$1,0000.00</h2></div>
                     </div>
                 </div>
            

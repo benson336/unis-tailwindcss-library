@@ -67,17 +67,17 @@ export default function EcommerceThree(){
                             </div>
                         </div>
                         <div className="flex flex-col items-end">
-                            <h2 className="m-0 p-0">$1,0000.00</h2>
+                            <h2 className={"m-0 p-0 " + ecommerceThreeState.selectedFont}>$1,0000.00</h2>
                         </div>
                     </div> 
                 </div>
             </div>
             <div className="px-4 pb-4">
-                <h2 className="m-0 p-0">Product Name</h2>
-                <h3 className="m-0 p-0 text-gray-400">Product Description</h3>
+                <h2 className={"m-0 p-0 " + ecommerceThreeState.selectedFont}>Product Name</h2>
+                <h3 className={"m-0 p-0 text-gray-400 " + ecommerceThreeState.selectedFont}>Product Description</h3>
             </div>
             <div className="px-4 pb-4">
-                <h3 className="m-0 p-0 text-gray-300">Unis Item: <span className="text-gray-800">00-00-000000</span></h3>
+                <h3 className={"m-0 p-0 text-gray-300 " + ecommerceThreeState.selectedFont}>Unis Item: <span className="text-gray-800">00-00-000000</span></h3>
             </div>
         </div>
            

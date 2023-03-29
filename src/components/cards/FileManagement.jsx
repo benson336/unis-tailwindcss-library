@@ -46,46 +46,28 @@ export default function FileManagement(){
 
     let fileManagementComp = (
             
-                <div className="bg-gray-50 rounded-xl" style={{"width":"300px", "height":"auto"}}>
-                    <div className="w-full py-4 px-4 flex justify-start items-center">
-                        <div className="w-1/2 flex justify-start items-center">
-                            <h2 className={"p-0 m-0 " + fileManagementState.selectedFont}>Title</h2>
-                        </div>
-                        <div className="w-1/2 flex justify-end items-center">
-                            <div className="p-2 border-r">
-                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.249023 10.9384V13.7509H3.06152L11.3565 5.4559L8.54402 2.6434L0.249023 10.9384ZM13.5315 3.2809C13.824 2.9884 13.824 2.5159 13.5315 2.2234L11.7765 0.468398C11.484 0.175898 11.0115 0.175898 10.719 0.468398L9.34652 1.8409L12.159 4.6534L13.5315 3.2809Z" fill="#88898B"/>
-                                </svg>
-                            </div>
-                            <div className="p-2">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.25 7.25V8.75H11.75V7.25H4.25ZM8 0.5C3.86 0.5 0.5 3.86 0.5 8C0.5 12.14 3.86 15.5 8 15.5C12.14 15.5 15.5 12.14 15.5 8C15.5 3.86 12.14 0.5 8 0.5ZM8 14C4.6925 14 2 11.3075 2 8C2 4.6925 4.6925 2 8 2C11.3075 2 14 4.6925 14 8C14 11.3075 11.3075 14 8 14Z" fill="#BE110B"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-full px-4 pb-4 flex justify-start items-center">
-                        <div className="flex leading-normal font-semibold">
-                            <div className="py-1 px-4 bg-[#D6FCE7] border-0 rounded-full">
-                                <p className={"p-0 m-0 text-[#268C55] text-xs " + fileManagementState.selectedFont}>Status</p>
-                            </div>
-                            <div className="py-1 px-4 ml-2 flex items-center bg-gray-200 border-0 rounded-full">
-                                <p className={"p-0 m-0 text-xs " + fileManagementState.selectedFont}>Tag</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-full px-4 pb-4 flex justify-start items-center">
-                        <h2 className="m-0 p-0">$1,0000.00</h2>
-                    </div>
-                    <div className="w-full px-4 pb-4 flex justify-start items-center">
-                        <div className="w-1/2 flex justify-start items-center">
-                            <h2 className={"m-0 p-0 font-normal" + fileManagementState.selectedFont}>SUB-HEADER TEXT</h2>
-                        </div>
-                        <div className="w-1/2 flex justify-end items-center">
-                            <h2 className="m-0 p-0 text-gray-400">01/01/2023</h2>
-                        </div>
-                    </div>
+        <div className="border border-gray-100 rounded-xl" style={{"width":"200px", "height":"auto"}}>
+            <div className="px-5 pt-4 w-full flex justify-end items-center">
+                <div>
+                    <svg width={4} height={16} viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                        <path d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z" fill="#323232" />
+                    </svg>
                 </div>
+            </div>
+            <div className="px-5 pb-8 w-full flex justify-center items-start">
+                <div>
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.3333 3.16667V21.8333H2.66667V3.16667H21.3333ZM21.3333 0.5H2.66667C1.2 0.5 0 1.7 0 3.16667V21.8333C0 23.3 1.2 24.5 2.66667 24.5H21.3333C22.8 24.5 24 23.3 24 21.8333V3.16667C24 1.7 22.8 0.5 21.3333 0.5ZM14.8533 12.3133L10.8533 17.4733L8 14.02L4 19.1667H20L14.8533 12.3133Z" fill="#CECECE"/>
+                    </svg>
+                </div>
+            </div>
+            <div className="px-5 py-5 border-t border-gray-100">
+                <div>
+                    <h3 className={"p-0 m-0 leading-none " + fileManagementState.selectedFont}>File1.pdf</h3>
+                    <p className={"p-0 m-0 " + fileManagementState.selectedFont}>12/13/2022 13:36</p>
+                </div>
+            </div>
+        </div>
            
     )
 

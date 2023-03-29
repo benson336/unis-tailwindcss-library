@@ -64,16 +64,16 @@ export default function KanbanList(){
                     </div>
                     <div className="px-5 pb-4">
                         <div className="w-full flex justify-start items-center">
-                            <div><h4 className="p-0 m-0 font-medium">Item Name</h4></div>
-                            <div className="ml-5%"><p className="p-0 m-0">Item Description</p></div>
+                            <div><h4 className={"p-0 m-0 font-medium " + kanbanListState.selectedFont}>Item Name</h4></div>
+                            <div className="ml-5%"><p className={"p-0 m-0 " + kanbanListState.selectedFont}>Item Description</p></div>
                         </div>
                         <div className="w-full flex justify-start items-center">
-                            <div><h4 className="p-0 m-0 font-medium">Item Name</h4></div>
-                            <div className="ml-5%"><p className="p-0 m-0">Item Description</p></div>
+                            <div><h4 className={"p-0 m-0 font-medium " + kanbanListState.selectedFont}>Item Name</h4></div>
+                            <div className="ml-5%"><p className={"p-0 m-0 " + kanbanListState.selectedFont}>Item Description</p></div>
                         </div>
                         <div className="w-full flex justify-start items-center">
-                            <div><h4 className="p-0 m-0 font-medium">Item Name</h4></div>
-                            <div className="ml-5%"><p className="p-0 m-0">Item Description</p></div>
+                            <div><h4 className={"p-0 m-0 font-medium " + kanbanListState.selectedFont}>Item Name</h4></div>
+                            <div className="ml-5%"><p className={"p-0 m-0 " + kanbanListState.selectedFont}>Item Description</p></div>
                         </div>
                     </div>
 
